@@ -11,6 +11,7 @@ body{
     margin: 10px;
     height: 200vh;  
 	overflow-x: hidden;
+	scrollbar-width: none;
 }
 
 .homeImg {
