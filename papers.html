@@ -13,7 +13,7 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="./images/SMAIL Icon Colored.png" />
-    <title>SMAIL | FAQ</title>
+    <title>SMAIL | Accepted Papers</title>
   </head>
 
   <body>
@@ -44,63 +44,34 @@
               <a class="nav-link" href="students.html">Students</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="papers.html">Accepted Papers</a>
+              <a class="nav-link active" aria-current="page" href="papers.html">Accepted Papers</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="staff.html">Staff</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="FAQ.html"
-                >FAQ</a
-              >
+              <a class="nav-link" href="FAQ.html">FAQ</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="greetContainer text-center">
-      <h1 class="greet-text" data-aos="zoom-in-up">FAQ</h1>
-    </div>
-    <div class="seperator mt-5" data-aos="fade-right">
-      <div class="container row align-items-center">
-        <h3 class="h3 text-light">Frequently Asked Questions About SMAIL</h3>
-      </div>
-    </div>
     <div class="container mt-5">
-      <h6 class="h4" data-aos="fade-right">Q: How long is the program?</h6>
-      <p data-aos="fade-left">
-        A: The program is officially 6 months but can be extended depending on
-        the project and mentor.
-      </p>
-    </div>
-    <div class="container my-5">
-      <h6 class="h4" data-aos="fade-right">Q: What is the time commitment?</h6>
-      <p data-aos="fade-left">
-        A: We expect students to commit on average 15 hours a week for the
-        program, as good research requires a lot of commitment. This is on
-        average, we understand that students are busy and will commit less
-        during exam and holiday weeks.
-      </p>
-    </div>
-    <div class="container my-5">
-      <h6 class="h4" data-aos="fade-right">
-        Q: I am a Saudi studying at an international university, am I eligible
-        for the program?
-      </h6>
-      <p data-aos="fade-left">
-        A: Currently, we only focus on students in Saudi universities due to the
-        limited access for research opportunities in those universities.
-      </p>
-    </div>
-    <div class="container my-5">
-      <h6 class="h4" data-aos="fade-right">
-        Q: Will I get a research paper from this?
-      </h6>
-      <p data-aos="fade-left">
-        A: Our goal is that all of our students end up with a first author
-        paper. However, that depends a lot on the project, the mentor, and your
-        commitment.
-      </p>
+      <h2 class="text-center mb-4">Accepted Papers</h2>
+      <p class="text-center text-muted">Accepted and published papers from our program's cohorts.</p>
+
+      <div class="list-group" id="papers-list">
+        <a href="https://www.ncbi.nlm.nih.gov/research/bionlp/biocreative9#page-top" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <div class="w-100">
+            <div class="d-flex w-100 justify-content-between align-items-start">
+              <h6 class="mb-1">An Integrated Approach to Biomedical QA: Combining Strategic LLM Selection, RAG, and Augmented Fine-tuning</h6>
+              <span class="badge bg-success ms-3">Accepted</span>
+            </div>
+            <p class="mb-1">Authors: Ahmed Omar Bajaber (Student), Mohammed Alliheedi (Mentor)</p>
+            <small>BioCreative IX Challenge and Workshop — Montreal, Canada</small>
+          </div>
+        </a>
+      </div>
     </div>
   </body>
   <script
@@ -113,3 +84,5 @@
     AOS.init();
   </script>
 </html>
+
+
