@@ -134,3 +134,32 @@ body{
     border-radius: 12px;
     padding: 1rem;
 }
+
+/*footer*/
+.footer {
+  background-color: #2a2a2a;  
+}
+
+.footer-link {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-logo {
+  width: 140px;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #ddd;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: #fff;
+}
