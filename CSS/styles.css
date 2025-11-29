@@ -144,8 +144,7 @@ body{
   color: #ddd;
   text-decoration: none;
   font-weight: 400;
-  display: block;
-  margin-bottom: 0.3rem;
+  line-height: 30px;
 }
 
 .footer-link:hover {
@@ -156,12 +155,9 @@ body{
   width: 170px;
 }
 
-.social-icon {
-  font-size: 1.5rem;
-  color: #ddd;
-  transition: 0.3s;
-}
 
 .social-icon img {
   width:30px;
+  height: 30px;
+   object-fit: contain;
 }
