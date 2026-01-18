@@ -13,15 +13,18 @@
       crossorigin="anonymous"
     />    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="icon" type="image/x-icon" href="./images/SMAIL Icon Colored.png" />
     <title>SMAIL | Home</title>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-sm bg-body-tertiary sticky-top" style="z-index: 999;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="./images/SMAIL Colored.svg" width="150" alt=""
-        /></a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar transparent" style="z-index: 999;">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./images/SMAIL Colored.svg" width="150" alt="SMAIL Logo" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -34,23 +37,28 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="mentors.html">Mentors</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="students.html">Students</a>
+              <a class="nav-link" href="#program">Program</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="communityDropdown" role="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                Community
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="communityDropdown">
+                <li><a class="dropdown-item" href="students.html">Students</a></li>
+                <li><a class="dropdown-item" href="mentors.html">Mentors</a></li>
+                <li><a class="dropdown-item" href="staff.html">Staff</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="papers.html">Accepted Papers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="staff.html">Staff</a>
+              <a class="nav-link" href="papers.html">Publications</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="FAQ.html">FAQ</a>
@@ -60,80 +68,405 @@
       </div>
     </nav>
     
-
-    
-    <div class="banner-container position-relative text-center text-white">
-      <img
-        src="images/banner.jpg"
-        class="img-fluid w-100 banner-img"
-        alt="Banner"
-      />
-      <div
-        class="banner-text position-absolute top-50 start-50 translate-middle"
-      >
-        <h1 class="fw-bold" style="font-size: 3rem;">Saudi Medical AI Lab</h1>
-      </div>
-    </div>
-    <div class="container aboutUsCont mt-5">
-      <h3 class="h3" data-aos="fade-right">About Us:</h3>
-      <p class="h5 lh-base" data-aos="fade-left">
-        The Saudi Medical AI Research Lab (SMAIL) is an open, volunteer-driven research program that supports students in Saudi universities to conduct AI for health research with experienced mentors worldwide. Our areas of research include medical image analysis, bioinformatics, genomics, among others.
-      </p>
-    </div>
-
-    <div class="container">
-      <h4 class="h4 mt-5">Statistics</h4>
-      <div class="row text-center align-items-center gap-3">
-        <div class="col-sm">
-          <p class="percentage" data-aos="zoom-out-right">
-            20+
-          </p>
-          <h4 class="h4">Mentors</h4>
-        </div>
-        <div class="col-sm">
-          <p class="percentage" data-aos="zoom-out-left">
-            31+
-          </p>
-          <h4 class="h4">Students</h4>
+    <!-- Hero Section -->
+    <section class="hero-section position-relative">
+      <div class="hero-overlay"></div>
+      <img src="images/Riyadh Design.png" class="hero-image" alt="Riyadh Cityscape" />
+      <div class="hero-content">
+        <div class="container">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              BRIDGING MINDS IN<br><span class="accent-red">SAUDI HEALTHCARE</span>
+            </h1>
+            <p class="hero-subtitle">
+              Connecting Saudi talent with global expertise to transform healthcare with AI.
+            </p>
+            <div class="hero-buttons">
+              <a href="#application" class="btn btn-primary-custom">Apply for Research</a>
+              <a href="#application" class="btn btn-secondary-custom">Join as a Mentor</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="container mt-5 mb-5">
-      <h4 class="h4 mt-5">Mentors From Top Institutions</h4>
-      <div class="d-flex flex-wrap justify-content-center gap-5 mt-5 mb-5 custom-logos">
-        <img src="./images/Institutions/CMU.png" class="Inst-Img" alt="CMU University logo" />
-        <img src="./images/Institutions/IAU.svg" class="Inst-Img" alt="IAU University logo" />
-        <img src="./images/Institutions/Kacst.png" class="Inst-Img" alt="KACST University logo" />
-        <img src="./images/Institutions/KAU.png" class="Inst-Img" alt="KAU University logo" />
-        <img src="./images/Institutions/KSAU.png" class="Inst-Img" alt="KSAU University logo" />
-        <img src="./images/Institutions/Oxford.png" class="Inst-Img" alt="Oxford University logo" />
-        <img src="./images/Institutions/Stanford.png" class="Inst-Img" alt="Stanford University logo" />
+    <!-- About Us Section -->
+    <section id="about" class="section-white section-spacing">
+      <div class="container text-center">
+        <span class="section-badge">ABOUT US</span>
+        <h2 class="section-heading">
+          Empowering Innovation in <span class="accent-red">Medical AI</span>
+        </h2>
+        <p class="section-description">
+          The Saudi Medical AI Research Lab (SMAIL) is an open, volunteer-driven research program that supports students in Saudi universities to conduct AI for health research with experienced mentors worldwide.
+        </p>
       </div>
-    </div>
+    </section>
 
+    <!-- Statistics Section -->
+    <section class="section-white section-spacing">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4">
+            <div class="stat-card" data-aos="zoom-in">
+              <i class="bi bi-person-workspace stat-icon"></i>
+              <p class="stat-number">20+</p>
+              <h4 class="stat-label">Mentors</h4>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+              <i class="bi bi-mortarboard stat-icon"></i>
+              <p class="stat-number">46+</p>
+              <h4 class="stat-label">Students</h4>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+              <i class="bi bi-file-text stat-icon"></i>
+              <p class="stat-number">1</p>
+              <h4 class="stat-label">Publication</h4>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <span class="section-badge">PROGRAM HIGHLIGHTS</span>
+        </div>
+      </div>
+    </section>
 
-    <div id="footer-placeholder"></div>
-    <script>
-      fetch('footer.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('footer-placeholder').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading footer:', error));
-    </script>
+    <!-- Program at a Glance Section -->
+    <section id="program" class="section-light-pink section-spacing">
+      <div class="container">
+        <h2 class="section-heading text-center">
+          Program at a <span class="accent-red">Glance</span>
+        </h2>
+        <div class="row g-4 mt-4">
+          <div class="col-md-6">
+            <div class="program-feature-card">
+              <div class="program-icon-wrapper">
+                <i class="bi bi-calendar3 program-icon"></i>
+              </div>
+              <div class="program-content">
+                <h5 class="program-title">6 Months Duration</h5>
+                <p class="program-description">Structured research program.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="program-feature-card">
+              <div class="program-icon-wrapper">
+                <i class="bi bi-laptop program-icon"></i>
+              </div>
+              <div class="program-content">
+                <h5 class="program-title">Fully remote</h5>
+                <p class="program-description">Join from anywhere.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="program-feature-card">
+              <div class="program-icon-wrapper">
+                <i class="bi bi-people program-icon"></i>
+              </div>
+              <div class="program-content">
+                <h5 class="program-title">Who Can Join</h5>
+                <p class="program-description">Saudi university students & global mentors.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="program-feature-card">
+              <div class="program-icon-wrapper">
+                <i class="bi bi-cpu program-icon"></i>
+              </div>
+              <div class="program-content">
+                <h5 class="program-title">Key Research Fields</h5>
+                <p class="program-description">Medical Imaging, Bioinformatics, Genomics, and more.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    </body>
+    <!-- Global Community Network Section -->
+    <section id="community" class="section-white section-spacing">
+      <div class="container">
+        <h2 class="section-heading text-center">
+          Our Global <span class="accent-red">Community Network</span>
+        </h2>
+        <div class="saudi-map-container mt-5">
+          <div class="saudi-map-wrapper text-center">
+            <img src="images/map.webp" alt="Saudi Arabia Community Map" class="saudi-map-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mentors from Top Universities Section -->
+    <section class="section-white section-spacing">
+      <div class="container">
+        <h2 class="section-heading text-center">
+          Mentors from <span class="accent-red">Top Universities</span>
+        </h2>
+        <div class="universities-row mt-5">
+          <div class="university-logo">
+            <img src="images/uni logos/Kacst 1.png" alt="KACST" />
+          </div>
+          <div class="university-logo">
+            <img src="images/uni logos/CMU 1.png" alt="Carnegie Mellon University" />
+          </div>
+          <div class="university-logo">
+            <img src="images/uni logos/KAU 1.png" alt="King Abdulaziz University" />
+          </div>
+          <div class="university-logo">
+            <img src="images/uni logos/KSAU 1.png" alt="King Saud bin Abdulaziz University" />
+          </div>
+          <div class="university-logo">
+            <img src="images/uni logos/Oxford 1.png" alt="University of Oxford" />
+          </div>
+          <div class="university-logo">
+            <img src="images/uni logos/Stanford 1.png" alt="Stanford University" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Application Section -->
+    <section id="application" class="section-light-pink section-spacing">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-badge">APPLICATION</span>
+          <h2 class="section-heading">
+            Ready to shape the <span class="accent-red">future of Medicine?</span>
+          </h2>
+        </div>
+
+        <!-- For Students Card -->
+        <div class="application-card application-card-red mt-5">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <h3 class="application-title">For Students</h3>
+              <p class="application-description">
+                Join as a student researcher, get a PhD mentor, and contribute to high-impact medical research
+              </p>
+              <ul class="application-benefits">
+                <li><span class="benefit-icon"></span> First-author potential</li>
+                <li><span class="benefit-icon"></span> Flexible remote supervision</li>
+                <li><span class="benefit-icon"></span> Global academic network</li>
+              </ul>
+              <a href="#" class="btn-apply-now">Apply Now</a>
+            </div>
+            <div class="col-lg-5">
+              <div class="cohort-card-new">
+                <i class="bi bi-calendar3 cohort-icon-new"></i>
+                <p class="cohort-title">3rd Cohort</p>
+                <p class="cohort-date-new">Students Registration</p>
+                <p class="countdown-number-new coming-soon-text">Coming Soon</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- For Mentors Card -->
+        <div class="application-card application-card-grey mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-5 order-lg-1 order-2">
+              <div class="cohort-card-new">
+                <i class="bi bi-calendar3 cohort-icon-new"></i>
+                <p class="cohort-title">3rd Cohort</p>
+                <p class="cohort-date-new">Mentors Registration</p>
+                <p class="countdown-number-new coming-soon-text">Coming Soon</p>
+              </div>
+            </div>
+            <div class="col-lg-7 order-lg-2 order-1">
+              <h3 class="application-title">For Mentors</h3>
+              <p class="application-description">
+                Join as a mentor, guide talented students, and contribute to impactful AI for health research.
+              </p>
+              <ul class="application-benefits">
+                <li><span class="benefit-icon"></span> Contribute to High-Impact Research</li>
+                <li><span class="benefit-icon"></span> Collaborate with Global Experts</li>
+                <li><span class="benefit-icon"></span> Inspire & Guide Students</li>
+              </ul>
+              <a href="#" class="btn-apply-now">Apply Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="section-white section-spacing">
+      <div class="container">
+        <h2 class="section-heading text-center mb-4">FAQs</h2>
+        <div class="faq-container">
+          <div class="accordion accordion-custom" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  How long is the program?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  The program is officially 6 months but can be extended depending on the project and mentor.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  What is the time commitment?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We expect students to commit on average 15 hours a week for the program, as good research requires a lot of commitment. This is on average, we understand that students are busy and will commit less during exam and holiday weeks.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  I am a Saudi studying at an international university, am I eligible?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Currently, we only focus on students in Saudi universities due to the limited access for research opportunities in those universities.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-lg-6">
+            <img src="./images/SMAIL Colored.svg" width="150" alt="SMAIL Logo" class="mb-3" />
+            <p class="footer-description">
+              SMAIL is a program empowering Saudi students to conduct AI in health research with expert mentors.
+            </p>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <h5 class="footer-heading mb-3">Contact Us</h5>
+            <p class="footer-contact">
+              <i class="bi bi-envelope"></i> <a href="mailto:Saudimedicalailab@gmail.com">Saudimedicalailab@gmail.com</a>
+            </p>
+            <p class="footer-contact">
+              <i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/company/saudi-medical-ai-lab" target="_blank">Saudi-Medical-AI-Lab</a>
+            </p>
+          </div>
+        </div>
+        <div class="footer-copyright text-center py-3">
+          <p>&copy; 2026 Saudi Medical AI Lab. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
 
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7NjIeHz"
     crossorigin="anonymous"
   ></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    
-    AOS.init();
+      AOS.init();
+      
+      // Countdown timer calculation
+      function updateCountdown() {
+        const studentDate = new Date('2026-03-10');
+        const mentorDate = new Date('2026-03-02');
+        const today = new Date();
+        
+        const studentDiff = Math.ceil((studentDate - today) / (1000 * 60 * 60 * 24));
+        const mentorDiff = Math.ceil((mentorDate - today) / (1000 * 60 * 60 * 24));
+        
+        const studentDaysEl = document.getElementById('student-days');
+        const mentorDaysEl = document.getElementById('mentor-days');
+        
+        if (studentDaysEl) {
+          studentDaysEl.textContent = studentDiff > 0 ? studentDiff : '0';
+        }
+        if (mentorDaysEl) {
+          mentorDaysEl.textContent = mentorDiff > 0 ? mentorDiff : '0';
+        }
+      }
+      
+      updateCountdown();
+
+      // Dropdown click fallback
+      const dropdownToggle = document.getElementById('communityDropdown');
+      const dropdownMenu = dropdownToggle?.nextElementSibling;
+
+      if (dropdownToggle && dropdownMenu) {
+        dropdownToggle.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          dropdownMenu.classList.toggle('show');
+          this.setAttribute('aria-expanded', dropdownMenu.classList.contains('show'));
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+          if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+            dropdownMenu.classList.remove('show');
+            dropdownToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+
+      // Navbar scroll behavior
+      const navbar = document.querySelector('.custom-navbar');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          navbar.classList.remove('transparent');
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.add('transparent');
+          navbar.classList.remove('scrolled');
+        }
+      });
+
+      // Initialize accordion manually
+      (function() {
+        var buttons = document.querySelectorAll('.accordion-custom .accordion-button');
+        buttons.forEach(function(button) {
+          button.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            var targetSelector = this.getAttribute('data-bs-target');
+            var target = document.querySelector(targetSelector);
+            if (!target) return;
+
+            var isOpen = target.classList.contains('show');
+            var accordion = this.closest('.accordion');
+
+            // Close all accordions in the same parent
+            if (accordion) {
+              accordion.querySelectorAll('.accordion-collapse').forEach(function(collapse) {
+                collapse.classList.remove('show');
+              });
+              accordion.querySelectorAll('.accordion-button').forEach(function(btn) {
+                btn.classList.add('collapsed');
+              });
+            }
+
+            // Toggle the clicked one
+            if (!isOpen) {
+              target.classList.add('show');
+              this.classList.remove('collapsed');
+            }
+          });
+        });
+      })();
   </script>
-  
+  </body>
 </html>
