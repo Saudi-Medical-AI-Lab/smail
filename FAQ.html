@@ -23,7 +23,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar" style="z-index: 999;">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="./images/SMAIL Colored.svg" width="150" alt="SMAIL Logo" />
+          <img src="./images/SMAIL Colored.svg" width="110" alt="SMAIL Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -37,7 +37,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
@@ -133,73 +133,59 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row py-5">
-          <div class="col-lg-6">
-            <img src="./images/SMAIL Colored.svg" width="150" alt="SMAIL Logo" class="mb-3" />
-            <p class="footer-description">
-              SMAIL is a program empowering Saudi students to conduct AI in health research with expert mentors.
-            </p>
-          </div>
-          <div class="col-lg-6 text-lg-end">
-            <h5 class="footer-heading mb-3">Contact Us</h5>
-            <p class="footer-contact">
-              <i class="bi bi-envelope"></i> <a href="mailto:Saudimedicalailab@gmail.com">Saudimedicalailab@gmail.com</a>
-            </p>
-            <p class="footer-contact">
-              <i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/company/saudi-medical-ai-lab" target="_blank">Saudi-Medical-AI-Lab</a>
-            </p>
-          </div>
-        </div>
-        <div class="footer-copyright text-center py-3">
-          <p>&copy; 2026 Saudi Medical AI Lab. All Rights Reserved.</p>
-        </div>
-      </div>
-    </footer>
+  <div id="footer-placeholder"></div>
 
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7NjIeHz"
     crossorigin="anonymous"
   ></script>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script>
-      AOS.init();
+    AOS.init();
+    // Load footer content
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
 
-      // Initialize accordion manually
-      (function() {
-        var buttons = document.querySelectorAll('.accordion-custom .accordion-button');
-        buttons.forEach(function(button) {
-          button.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
+    // Initialize accordion manually
+    (function () {
+      var buttons = document.querySelectorAll('.accordion-custom .accordion-button');
+      buttons.forEach(function (button) {
+        button.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
 
-            var targetSelector = this.getAttribute('data-bs-target');
-            var target = document.querySelector(targetSelector);
-            if (!target) return;
+          var targetSelector = this.getAttribute('data-bs-target');
+          var target = document.querySelector(targetSelector);
+          if (!target) return;
 
-            var isOpen = target.classList.contains('show');
-            var accordion = this.closest('.accordion');
+          var isOpen = target.classList.contains('show');
+          var accordion = this.closest('.accordion');
 
-            // Close all accordions in the same parent
-            if (accordion) {
-              accordion.querySelectorAll('.accordion-collapse').forEach(function(collapse) {
-                collapse.classList.remove('show');
-              });
-              accordion.querySelectorAll('.accordion-button').forEach(function(btn) {
-                btn.classList.add('collapsed');
-              });
-            }
+          // Close all accordions in the same parent
+          if (accordion) {
+            accordion.querySelectorAll('.accordion-collapse').forEach(function (collapse) {
+              collapse.classList.remove('show');
+            });
+            accordion.querySelectorAll('.accordion-button').forEach(function (btn) {
+              btn.classList.add('collapsed');
+            });
+          }
 
-            // Toggle the clicked one
-            if (!isOpen) {
-              target.classList.add('show');
-              this.classList.remove('collapsed');
-            }
-          });
+          // Toggle the clicked one
+          if (!isOpen) {
+            target.classList.add('show');
+            this.classList.remove('collapsed');
+          }
         });
-      })();
+      });
+    })();
   </script>
   </body>
 </html>

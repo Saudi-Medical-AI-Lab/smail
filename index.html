@@ -23,7 +23,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar transparent" style="z-index: 999;">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="./images/SMAIL Colored.svg" width="150" alt="SMAIL Logo" />
+          <img src="./images/SMAIL Colored.svg" width="110" alt="SMAIL Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -37,7 +37,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
@@ -431,30 +431,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row py-5">
-          <div class="col-lg-6">
-            <img src="./images/SMAIL Colored.svg" width="150" alt="SMAIL Logo" class="mb-3" />
-            <p class="footer-description">
-              SMAIL is a program empowering Saudi students to conduct AI in health research with expert mentors.
-            </p>
-          </div>
-          <div class="col-lg-6 text-lg-end">
-            <h5 class="footer-heading mb-3">Contact Us</h5>
-            <p class="footer-contact">
-              <i class="bi bi-envelope"></i> <a href="mailto:Saudimedicalailab@gmail.com">Saudimedicalailab@gmail.com</a>
-            </p>
-            <p class="footer-contact">
-              <i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/company/saudi-medical-ai-lab" target="_blank">Saudi-Medical-AI-Lab</a>
-            </p>
-          </div>
-        </div>
-        <div class="footer-copyright text-center py-3">
-          <p>&copy; 2026 Saudi Medical AI Lab. All Rights Reserved.</p>
-        </div>
-      </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -464,6 +441,14 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
       AOS.init();
+      
+      // Load navbar and footer
+      fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
       
       // Countdown timer calculation
       function updateCountdown() {
@@ -519,6 +504,35 @@
           navbar.classList.remove('scrolled');
         }
       });
+
+  //navbar active link highlighting
+  document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.custom-navbar .nav-link');
+    const sections = document.querySelectorAll('section[id]');
+    const programLink = document.querySelector('.custom-navbar a[href="#program"]');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 50;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => link.classList.remove('active'));
+
+      const programSection = document.querySelector('#program');
+      if (window.scrollY >= programSection.offsetTop - 80) {
+        if (programLink) programLink.classList.add('active');
+      } else if (current) {
+
+        const activeLink = document.querySelector(`.custom-navbar a[href="#${current}"]`);
+        if (activeLink) activeLink.classList.add('active');
+      }
+    });
+  });
 
       // Map section 
       // Data for students in each region
