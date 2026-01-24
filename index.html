@@ -69,7 +69,7 @@
     </nav>
     
     <!-- Hero Section -->
-    <section class="hero-section position-relative">
+    <section class="hero-section position-relative mb-5">
       <div class="hero-overlay"></div>
       <img src="images/Riyadhero.png" class="hero-image" alt="Riyadh Cityscape" />
       <div class="hero-content">
@@ -104,7 +104,7 @@
     </section>
 
     <!-- Statistics Section -->
-    <section class="section-white ">
+    <section class="section-white mb-5">
       <div class="container">
         <div class="row g-4 justify-content-center">
           <div class="col-md-4">
@@ -433,16 +433,13 @@
     <!-- Footer -->
     <div id="footer-placeholder"></div>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7NjIeHz"
-    crossorigin="anonymous"
-  ></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
       AOS.init();
       
-      // Load navbar and footer
+      // Load footer
       fetch('footer.html')
       .then(response => response.text())
       .then(data => {
@@ -493,6 +490,20 @@
         });
       }
 
+      document.addEventListener('DOMContentLoaded', function () {
+  const navLinks = document.querySelectorAll('.navbar-collapse .nav-link');
+  const navbarCollapse = document.getElementById('navbarNav');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      // تتحقق إذا القائمة مفتوحة
+      if (navbarCollapse.classList.contains('show')) {
+        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+        bsCollapse.hide(); // تغلق القائمة
+      }
+    });
+  });
+});
       // Navbar scroll behavior
       const navbar = document.querySelector('.custom-navbar');
       window.addEventListener('scroll', function() {
@@ -537,13 +548,13 @@
       // Map section 
       // Data for students in each region
         const studentsData = {
-          SA01: { count: 12, percentage: 38 },
-          SA02: { count: 7, percentage: 22 },
-          SA03: { count: 4, percentage: 12 },
-          SA04: { count: 3, percentage: 10 },
-          SA05: { count: 3, percentage: 10},
-          SA06: { count: 2, percentage: 7 },
-          SA07: { count: 0, percentage: 0 },
+          SA01: { count: 5, percentage: 5.16 },
+          SA02: { count: 18, percentage: 18.58},
+          SA03: { count: 2, percentage: 2.7 },
+          SA04: { count: 5, percentage: 5.16 },
+          SA05: { count: 0, percentage: 0},
+          SA06: { count: 0, percentage: 0 },
+          SA07: { count: 1, percentage: 1.3 },
           SA08: { count: 0, percentage: 0 }, 
           SA09: { count: 0, percentage: 0 },
           SA10: { count: 0, percentage: 0 },

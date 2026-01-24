@@ -67,9 +67,20 @@ animation from : AOS animation https://michalsnik.github.io/aos/
 }
 
 .custom-navbar .navbar-collapse {
-  position: absolute;
-  left: 52%;
-  transform: translateX(-50%);
+    position: static; 
+    transform: none;
+    left: auto;
+    width: 100%;
+    text-align: center;
+}
+
+
+@media (min-width: 992px) {
+    .custom-navbar .navbar-collapse {
+        position: absolute;
+        left: 52%;
+        transform: translateX(-50%);
+    }
 }
 
 
@@ -489,6 +500,7 @@ path:hover {
   overflow: hidden;
   position: relative;
   width: 100%;
+  padding-top: 10px;
 }
 
 .universities-track {
@@ -517,7 +529,7 @@ path:hover {
 }
 
 .university-logo:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 @keyframes scroll {
@@ -1074,6 +1086,12 @@ path:hover {
 
   .cohort-card-new {
     margin-top: 1.5rem;
+  }
+
+  .custom-navbar .navbar-collapse {
+    background-color: rgba(45, 45, 45, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
   }
 }
 
