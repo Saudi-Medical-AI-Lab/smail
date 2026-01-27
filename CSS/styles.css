@@ -736,7 +736,7 @@ path:hover {
   height: 330px; 
   margin-left: 3rem;
   margin-right: 3rem;
-  max-width: 300px;
+  width: 270px;
 }
 
 .cohort-icon-new {
@@ -1130,6 +1130,11 @@ path:hover {
 
 /* Responsive Design */
 @media (max-width: 992px) {
+
+  .application-card{
+    margin-right: auto;
+    margin-left: auto;
+  }
   .application-card .row {
     flex-direction: column;
     text-align: center;
@@ -1144,10 +1149,12 @@ path:hover {
     order: unset !important;
   }
 
-  .cohort-card-new {
-    margin-top: 1.5rem;
-  }
-
+    .cohort-card-new {
+      margin-top: 1.5rem;
+      margin-right: auto;
+      margin-left: auto;
+      height: auto;
+    }
 
   .custom-navbar .navbar-collapse {
     background-color: rgb(45, 45, 45);
@@ -1295,4 +1302,6 @@ path:hover {
   .universities-row {
     gap: 1.5rem;
   }
+
+  
 }
