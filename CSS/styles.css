@@ -515,16 +515,34 @@ path:hover {
 
 /* Universities Row */
 .universities-carousel {
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
   position: relative;
   width: 100%;
   padding-top: 10px;
+  cursor: grab;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.universities-carousel::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Opera */
+}
+
+.universities-carousel:active {
+  cursor: grabbing;
 }
 
 .universities-track {
   display: flex;
   gap: 4rem;
-  animation: scroll 48s linear infinite;
+  width: max-content;
+  padding: 10px 0;
+}
+
+.university-logo {
+  flex-shrink: 0;
 }
 
 .university-logo img {
@@ -534,7 +552,9 @@ path:hover {
   object-fit: contain;
   filter: grayscale(100%);
   opacity: 0.7;
-  transition: filter 0.3s, opacity 0.3s;
+  transition: filter 0.3s, opacity 0.3s, transform 0.3s;
+  user-select: none;
+  pointer-events: none;
 }
 
 .university-logo:hover img {
@@ -542,22 +562,11 @@ path:hover {
   opacity: 1;
 }
 
-.universities-track:hover {
-  animation-play-state: paused;
-}
-
 .university-logo:hover {
   transform: translateY(-2px);
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-105%);
-  }
-}
+
 
 /* Alumni Cards */
 .alumni-card {
@@ -706,6 +715,18 @@ path:hover {
   text-decoration: none;
   transition: all 0.3s;
    cursor: not-allowed;
+}
+
+.btn-apply-now.btn-apply-active {
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--primary-red);
+}
+
+.btn-apply-now.btn-apply-active:hover {
+  background-color: var(--primary-red);
+  color: var(--white);
+  border-color: var(--primary-red);
 }
 
 

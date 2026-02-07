@@ -85,6 +85,7 @@
             <div class="hero-buttons">
               <a href="#application" class="btn btn-primary-custom">Apply for Research</a>
               <a href="#Mentor-application" class="btn btn-secondary-custom">Join as a Mentor</a>
+              <a href="https://docs.google.com/forms/d/1ayCyNlArrOUQ-ifweoSGdQp865mX4VnMinzGVMEyuSI/edit" target="_blank" class="btn btn-secondary-custom">Join as Staff</a>
             </div>
           </div>
         </div>
@@ -275,7 +276,7 @@
     <section class="section-white section-spacing">
   <div class="container">
     <h2 class="section-heading text-center">
-      Mentors from <span class="accent-red">Top Universities</span>
+      Mentors from <span class="accent-red">Top Universities & Institutions</span>
     </h2>
     <div class="universities-carousel mt-5">
       <div class="universities-track">
@@ -302,9 +303,6 @@
         </div>
         <div class="university-logo">
           <img src="images/uni logos/BU.png" alt="BU University" />
-        </div>
-        <div class="university-logo">
-          <img src="images/uni logos/CVM.png" alt="CVM University" />
         </div>
         <div class="university-logo">
           <img src="images/uni logos/KLD.png" alt="KLD University" />
@@ -408,6 +406,8 @@
             </div>
           </div>
         </div>
+
+
         </div>
         </section>
 
@@ -483,29 +483,6 @@
       });
     });
   
-      // Countdown timer calculation
-      // function updateCountdown() {
-      //   const studentDate = new Date('2026-03-10');
-      //   const mentorDate = new Date('2026-03-02');
-      //   const today = new Date();
-        
-      //   const studentDiff = Math.ceil((studentDate - today) / (1000 * 60 * 60 * 24));
-      //   const mentorDiff = Math.ceil((mentorDate - today) / (1000 * 60 * 60 * 24));
-        
-      //   const studentDaysEl = document.getElementById('student-days');
-      //   const mentorDaysEl = document.getElementById('mentor-days');
-        
-      //   if (studentDaysEl) {
-      //     studentDaysEl.textContent = studentDiff > 0 ? studentDiff : '0';
-      //   }
-      //   if (mentorDaysEl) {
-      //     mentorDaysEl.textContent = mentorDiff > 0 ? mentorDiff : '0';
-      //   }
-      // }
-      
-      // updateCountdown();
-
-
 
   // Map section 
   // Data for students in each region
@@ -570,6 +547,78 @@
 
   });
 
+    </script>
+
+    <!-- Drag to Scroll for Universities Carousel -->
+    <script>
+      const carousel = document.querySelector('.universities-carousel');
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+      let autoScrollSpeed = 1;
+      let autoScrollRAF;
+      let isHovering = false;
+
+      // Auto-scroll via JS
+      function autoScroll() {
+        if (!isDown && !isHovering) {
+          carousel.scrollLeft += autoScrollSpeed;
+          // Loop back when reaching the end
+          if (carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth) {
+            carousel.scrollLeft = 0;
+          }
+        }
+        autoScrollRAF = requestAnimationFrame(autoScroll);
+      }
+      autoScrollRAF = requestAnimationFrame(autoScroll);
+
+      // Drag handlers
+      carousel.addEventListener('mousedown', (e) => {
+        isDown = true;
+        carousel.style.cursor = 'grabbing';
+        startX = e.pageX - carousel.offsetLeft;
+        scrollLeft = carousel.scrollLeft;
+      });
+
+      carousel.addEventListener('mouseup', () => {
+        isDown = false;
+        carousel.style.cursor = 'grab';
+      });
+
+      carousel.addEventListener('mouseleave', () => {
+        isDown = false;
+        isHovering = false;
+        carousel.style.cursor = 'grab';
+      });
+
+      carousel.addEventListener('mouseenter', () => {
+        isHovering = true;
+      });
+
+      carousel.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - carousel.offsetLeft;
+        const walk = (x - startX) * 2;
+        carousel.scrollLeft = scrollLeft - walk;
+      });
+
+      // Touch support
+      carousel.addEventListener('touchstart', (e) => {
+        isHovering = true;
+        startX = e.touches[0].pageX - carousel.offsetLeft;
+        scrollLeft = carousel.scrollLeft;
+      });
+
+      carousel.addEventListener('touchmove', (e) => {
+        const x = e.touches[0].pageX - carousel.offsetLeft;
+        const walk = (x - startX) * 2;
+        carousel.scrollLeft = scrollLeft - walk;
+      });
+
+      carousel.addEventListener('touchend', () => {
+        isHovering = false;
+      });
     </script>
   </body>
 </html>
