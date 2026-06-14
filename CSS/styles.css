@@ -13,10 +13,26 @@ animation from : AOS animation https://michalsnik.github.io/aos/
   --text-light: #ffffff;
 }
 
+html[dir="rtl"] h1, 
+html[dir="rtl"] span, 
+html[dir="rtl"] .program-subheading {
+  font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html[dir="rtl"] p, 
+html[dir="rtl"] button, 
+html[dir="rtl"] a, 
+html[dir="rtl"] h2, 
+html[dir="rtl"] .program-description {
+  font-family: "Cairo", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+
+
 /* Navbar */
 .navbar {
-    height: 70px;
-    min-height: 56px;
+  height: 70px;
+  min-height: 56px;
 }
 
 .custom-navbar {
@@ -35,15 +51,21 @@ animation from : AOS animation https://michalsnik.github.io/aos/
   backdrop-filter: blur(10px);
 }
 
-.custom-navbar .navbar-brand {
-  padding: 0;
+.navbar-link ul{
+  display: flex;
+  gap: 1.5rem;
+}
+[dir="rtl"] .navbar-brand {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
 }
 
 .custom-navbar .nav-link {
   color: var(--white) !important;
   font-weight: 500;
-  margin: 0 0.5rem;
   transition: color 0.3s;
+  margin-right: 1rem;
 }
 
 .custom-navbar .nav-link:hover,
@@ -72,9 +94,7 @@ animation from : AOS animation https://michalsnik.github.io/aos/
     width: 100%;
     text-align: center;
 }
-.custom-navbar img{
-  margin: 10px;
-}
+
 
 @media (min-width: 992px) {
     .custom-navbar .navbar-collapse {
@@ -91,7 +111,23 @@ animation from : AOS animation https://michalsnik.github.io/aos/
   .dropdown-menu {
     display: none;
   }
+.lang-toggle-btn {
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  color: #fff;
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-inline-end: 10px;
+  transition: background 0.2s, color 0.2s;
+  letter-spacing: 0.04em;
+}
 
+.lang-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
 /* Close button */
 .close-navbar {
   display: none;
@@ -194,11 +230,11 @@ body::-webkit-scrollbar {
   width: 100%;
   height: 100%;
   background: linear-gradient(
-    to right,
-    rgba(37, 37, 37, 0.85) 0%,
-    rgba(37, 37, 37, 0.6) 35%,
-    rgba(45, 45, 45, 0.4) 65%,
-    rgba(45, 45, 45, 0.3) 100%
+    to bottom,
+    rgba(21, 21, 21, 0.8) 0%,
+    rgba(30, 30, 30, 0.8) 35%,
+    rgba(48, 47, 47, 0.8) 65%,
+    rgba(70, 70, 70, 0.8) 100%
   );
   z-index: 2;
 }
@@ -216,11 +252,11 @@ body::-webkit-scrollbar {
 }
 
 .hero-title {
-  font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
   color: var(--white);
+  font-size: clamp(1.6rem, 4vw, 3rem);
 }
 
 .accent-red {
@@ -233,7 +269,7 @@ body::-webkit-scrollbar {
   color: var(--white);
   opacity: 0.95;
   font-weight: 300;
-  max-width: 500px;
+  max-width: 550px;
 }
 
 .hero-buttons {
@@ -475,7 +511,6 @@ path:hover {
   padding: 8px 12px; 
   border-radius: 8px;
   font-size: 16px;
-  font-family: 'Arial', sans-serif;
   font-weight: 500;
   color: #333;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
@@ -647,88 +682,179 @@ path:hover {
 }
 
 /* Application Cards */
-.application-card {
+
+.program-main-card {
+  background-color: #8b1a16; 
   border-radius: 24px;
-  padding: 5rem;
-  color: var(--white);
-  position: relative;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  padding: 3.5rem;
+  box-shadow: 0 15px 35px rgba(166, 25, 46, 0.2); 
+  border: none;
+  margin: 0 2rem;
 }
 
-.application-card-red {
-  background-color: #8b1a16;
-}
 
-.application-card-grey {
-  background-color: #3d3d3d;
-}
-
-.application-title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-  color: var(--white);
-}
-
-.application-description {
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-}
-
-.application-benefits {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 1.5rem;
-}
-
-.application-benefits li {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 0.75rem;
-  font-size: 1.25rem;
-}
-
-#Mentor-application{
-  margin-top: 6rem;
-}
-
-.benefit-icon {
-  width: 24px;
-  height: 24px;
-  background: linear-gradient(135deg, #ff6b6b 0%, #cc1a16 100%);
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.btn-apply-now {
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: var(--white);
-  padding: 0.75rem 2.5rem;
-  border: 2px solid white;
+.badge-student {
+  background-color: #ffffff78;
+  color: #a6192e; 
+  padding: 0.5rem 1.25rem;
   border-radius: 50px;
   font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s;
-   cursor: not-allowed;
-}
-
-.btn-apply-now.btn-apply-active {
-  cursor: pointer;
-  background-color: var(--white);
-  color: var(--primary-red);
-}
-
-.btn-apply-now.btn-apply-active:hover {
-  background-color: var(--primary-red);
-  color: var(--white);
-  border-color: var(--primary-red);
+  font-size: 0.9rem;
+  display: inline-block;
 }
 
 
+.program-subheading {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.program-description-card {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.program-features-list {
+  list-style: none;
+}
+
+.program-features-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  color: #ffffff; 
+}
+
+.feature-icon {
+  color: #ffffff; 
+  font-size: 1.2rem;
+}
+
+.registration-status-card {
+  background: #e3e3e326; 
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 10px 25px rgba(96, 96, 96, 0.3);
+}
+
+.calendar-icon-wrapper i {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.cohort-title {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: #ffffff;
+}
+
+.registration-label {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+}
+
+.date-badge-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #ffffff;
+}
+
+.btn-registration.disabled-closed {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 0.4) !important;
+  padding: 0.75rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: not-allowed;
+  transition: all 0.3s ease;
+}
+
+/* Mentor Program Section */
+.mentor-program-section {
+  background-color: #ffffff;
+  padding: 4rem 0;
+}
+
+.mentors-card {
+  background-color: #2d2d2d !important;
+  border-radius: 24px;
+  padding: 3.5rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.badge-mentor {
+  background-color: #8e3d3d80;
+  color: #ffffff;
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.mentors-card .program-subheading {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.mentors-card .program-description-card {
+  color: #cdcdcd;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.mentors-card .program-features-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  color: #ffffff;
+}
+
+.mentors-card .feature-icon {
+  color: #a6192e; 
+  font-size: 1.2rem;
+}
+
+.mentors-card .registration-status-card {
+  background: #191919; 
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.mentors-card .calendar-icon-wrapper i {
+  font-size: 2rem;
+  color: #a6192e;
+}
+
+.mentors-card .btn-registration.disabled-closed {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: rgba(255, 255, 255, 0.3) !important;
+  padding: 0.75rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: not-allowed;
+}
+
+
+/* FAQ Section */
 .faq-inline-link {
   color: var(--primary-red);
   font-weight: 600;
@@ -741,162 +867,27 @@ path:hover {
   opacity: 0.8;
 }
 
-/* .btn-apply-now:hover {
-  background-color: var(--white);
-  color: var(--dark-grey);
-} */
 
-/* New Cohort Card Styling */
-.cohort-card-new {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 12px;
-  padding: 1rem;
-  text-align: center;
-  height: 330px; 
-  margin-left: 3rem;
-  margin-right: 3rem;
-  width: 270px;
-}
-
-.cohort-icon-new {
-  font-size: 1.5rem;
-  color: var(--white);
-  margin-bottom: 0.5rem;
-  display: block;
-}
-
-.cohort-title {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--white);
-  margin: 0.5rem 0;
-}
-
-.cohort-date-new {
-  font-size: 0.875rem;
-  color: var(--white);
-  opacity: 0.9;
-  margin: 0.5rem 0;
-  line-height: 1.4;
-}
-
-.countdown-number-new {
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--white);
-  opacity: 0.8;
-  margin: 0.5rem 0 0 0;
-  line-height: 1;
-}
-
-
-
-.countdown-label-new {
-  font-size: 0.875rem;
-  color: var(--white);
-  opacity: 0.8;
-  margin: 0;
-}
-
-.coming-soon-text {
-  font-size: 1.75rem;
-  font-weight: 600;
-}
-
-.btn-application-outline {
-  background-color: transparent;
-  color: var(--white);
-  padding: 0.75rem 2.5rem;
-  border: 2px solid var(--white);
-  border-radius: 25px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.3s;
-}
-
-.btn-application-outline:hover {
-  background-color: var(--white);
-  color: var(--dark-grey);
-}
-
-/* Legacy cohort card styles */
-.cohort-card {
-  background-color: var(--white);
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.cohort-icon {
-  font-size: 2rem;
-  color: var(--primary-red);
-}
-
-.cohort-content {
-  flex: 1;
-}
-
-.cohort-label {
-  font-size: 0.875rem;
-  color: var(--text-dark);
-  margin: 0;
-  font-weight: 600;
-}
-
-.cohort-date {
-  font-size: 0.875rem;
-  color: var(--text-dark);
-  margin: 0.25rem 0 0 0;
-  opacity: 0.8;
-}
-
-.cohort-countdown {
-  text-align: center;
-  min-width: 80px;
-}
-
-.countdown-number {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--primary-red);
-  display: block;
-  line-height: 1;
-}
-
-.countdown-label {
-  font-size: 0.75rem;
-  color: var(--text-dark);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.btn-application {
-  background-color: var(--white);
-  color: var(--dark-grey);
-  padding: 0.75rem 2rem;
-  border: 2px solid var(--white);
-  border-radius: 4px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.3s;
-}
-
-.btn-application:hover {
-  background-color: transparent;
-  color: var(--white);
-}
 
 /* FAQ Accordion */
 .faq-container {
   max-width: 900px;
   margin: 0 auto;
+}
+
+.accordion-button {
+  unicode-bidi: plaintext;
+  text-align: start;
+}
+
+html[dir="rtl"] .accordion-button::after {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+html[dir="ltr"] .accordion-button::after {
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .accordion-custom .accordion-item {
@@ -1241,6 +1232,26 @@ path:hover {
   .dropdown-menu.show {
     display: block;
   }
+
+    .program-main-card {
+    padding: 2rem 1.5rem;
+  }
+  .text-right {
+    text-align: center !important;
+  }
+  .program-features-list li {
+    justify-content: center;
+  }
+
+    .program-main-card {
+    padding: 2rem 1.5rem;
+  }
+  .text-right {
+    text-align: center !important;
+  }
+  .program-features-list li {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1322,6 +1333,4 @@ path:hover {
   .universities-row {
     gap: 1.5rem;
   }
-
-  
 }
