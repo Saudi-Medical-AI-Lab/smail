@@ -22,6 +22,7 @@ const translations = {
     footer_tagline:   'Empowering tomorrow\'s innovators to reshape healthcare through AI-driven research.',
     footer_contact:   'Contact Us',
     footer_copyright: '© 2026 Specialized Medical AI Lab. All Rights Reserved.',
+    footer_license:   'Licence No. 1100542400.',
 
     // ── index.html ──────────────────────────────────────────
     hero_title:       'BRIDGING MINDS IN<br><span class="accent-red">SAUDI HEALTHCARE</span>',
@@ -90,10 +91,15 @@ const translations = {
     mentor_feat_2: "Expanding Global Collaboration",
     mentor_feat_3: "Inspiring and Guiding Talented Students",
     mentor_app_label: "Mentor Application Period",
-    mentor_date: "From 21 June to 31 July 2026",
+    mentor_date: "From June 21 to July 31, 2026",
     
     cohort_title: "3rd Cohort",
-    opening_soon: "Registration is opening soon",
+    opening_soon: "Registration is Opening Soon",
+
+    sponsor_badge: "SPONSORSHIP",
+    sponsor_heading: "Invest in the Next Generation of Researchers",
+    sponsor_description: "Join us as an official sponsor to empower young national talents and accelerate pioneering AI-driven medical research.",
+    sponsor_btn: "Become an Official Sponsor",
 
     faq_cta_heading:     'Still have questions?',
     faq_cta_desc:        'Visit our <a href="./FAQ.html" class="faq-inline-link">FAQ page</a> to find the answers you\'re looking for.',
@@ -144,6 +150,7 @@ const translations = {
 
     // ── Footer ──────────────────────────────────────────────
     footer_tagline:   'نُمكّن مبتكري الغد لإعادة تشكيل الرعاية الصحية من خلال البحث المدعوم بالذكاء الاصطناعي.',
+    footer_license:   'رقم الترخيص: 1100542400.',
     footer_contact:   'تواصل معنا',
     footer_copyright: '© 2026 Specialized Medical AI Lab. All Rights Reserved.',
 
@@ -218,6 +225,12 @@ const translations = {
     
     cohort_title: "الدفعة الثالثة",
     opening_soon: "التسجيل يُتاح قريبًا",
+
+    sponsor_badge: "رعاية البرنامج",
+    sponsor_heading: "استثمر في الجيل القادم من الباحثين",
+    sponsor_description: "ندعوكم للانضمام كراعي رسمي لتمكين الكفاءات الوطنية الشابة وتسريع عجلة الأبحاث الطبية الرائدة المدعومة بالذكاء الاصطناعي.",
+    sponsor_btn: "انضم كراعي رسمي  ",
+
     faq_cta_heading:     'هل لديك أسئلة أخرى؟',
     faq_cta_desc:        'قم بزيارة <a href="./FAQ.html" class="faq-inline-link">صفحة الأسئلة الشائعة</a> للعثور على الإجابات',
 
