@@ -23,8 +23,14 @@
 </head>
 
 <body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar transparent" style="z-index: 999;">
+<div class="fixed-top" style="z-index: 999;">
+
+  <section id="announcementBar" class="announcement-bar text-center py-2 position-relative">
+    <p class="m-0" data-i18n="announcement_sponsorship">Sponsorship opportunities are now open for our program! <a href="#sponsorship" data-i18n="know_more" style="color: #920e0e; text-decoration: underline;">Learn more →</a></p>
+    <button type="button" class="close-announcement" aria-label="Close" onclick="closeBar()">&times;</button>
+  </section>
+
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar transparent">
     <div class="container">
       <a class="navbar-brand pt-1" href="index.html">
         <img src="./images/SMAIL Updated.svg" width="120" alt="SMAIL Logo" />
@@ -36,14 +42,12 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <button class="close-navbar" aria-label="Close menu">&times;</button>
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html"
-              data-i18n="nav_home">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html" data-i18n="nav_home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav_about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#program" data-i18n="nav_program">Program</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="communityDropdown" role="button"
-              data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false"
-              data-i18n="nav_community">Community</a>
+              data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" data-i18n="nav_community">Community</a>
             <ul class="dropdown-menu" id="communityDropdownMenu" aria-labelledby="communityDropdown">
               <li><a class="dropdown-item" href="students.html" data-i18n="nav_students">Students</a></li>
               <li><a class="dropdown-item" href="mentors.html" data-i18n="nav_mentors">Mentors</a></li>
@@ -53,13 +57,13 @@
           <li class="nav-item"><a class="nav-link" href="papers.html" data-i18n="nav_publications">Publications</a></li>
           <li class="nav-item"><a class="nav-link" href="FAQ.html" data-i18n="nav_faq">FAQ</a></li>
         </ul>
-        <a href="https://www.sdaia.gov.sa/" target="_blank"><img src="./images/sdaia2.svg" class="m-3" width="100"
-            alt="SDAIA Logo" /></a>
-        <a href="https://www.sdaia.gov.sa/" target="_blank"><img src="./images/ai-year.svg" width="100"
-            alt="AI Year Logo" /></a>
+        <a href="https://www.sdaia.gov.sa/" target="_blank"><img src="./images/sdaia2.svg" class="m-3" width="100" alt="SDAIA Logo" /></a>
+        <a href="https://www.sdaia.gov.sa/" target="_blank"><img src="./images/ai-year.svg" width="100" alt="AI Year Logo" /></a>
       </div>
     </div>
   </nav>
+
+</div>
 
   <!-- Hero Section -->
   <section class="hero-section position-relative mb-5">
@@ -335,6 +339,7 @@
                   <button class="btn btn-registration disabled-closed w-100 mt-2" data-i18n="opening_soon">
                     Opening Soon
                   </button>
+                
                 </div>
               </div>
 
@@ -385,9 +390,14 @@
                     <span data-i18n="mentor_date">From June 21 to July 31, 2026</span>
                   </div>
 
-                  <button class="btn btn-registration disabled-closed w-100 mt-2" data-i18n="opening_soon">
-                    Opening Soon
-                  </button>
+                  <!-- <button class="btn btn-registration disabled-closed w-100 mt-2" data-i18n="opening_soon">
+                    Registration is Opening Soon
+                  </button> -->
+
+                  <a href="https://forms.gle/AoHXiFxiQFaCqG8C6" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-registration disabled-open w-100 mt-2" data-i18n="register_now">
+                    Register Now as a Mentor
+                  </a>
                 </div>
               </div>
             </div>
@@ -454,6 +464,13 @@
 
   <script>
     AOS.init();
+
+    function closeBar() {
+    const bar = document.getElementById('announcementBar');
+    if (bar) {
+        bar.style.display = 'none';
+    }
+}
 
     fetch('footer.html')
       .then(r => r.text())

@@ -31,6 +31,27 @@ html[dir="rtl"] .program-description {
 
 
 /* Navbar */
+.announcement-bar{
+background-color: #f59d9b; 
+color: #2a2a2a; 
+font-weight: 500;
+}
+.close-announcement {
+    position: absolute;
+    top: 50%;
+    inset-inline-end: 15px; 
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 1;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+    padding: 0;
+    margin: 0;
+}
+
 .navbar {
   height: 70px;
   min-height: 56px;
@@ -338,7 +359,7 @@ body::-webkit-scrollbar {
 
 .section-badge {
   display: inline-block;
-  background-color: rgba(204, 26, 22, 0.1);
+  background-color: #cc1a161a;
   color: var(--primary-red);
   padding: 0.5rem 1.25rem;
   border-radius: 999px;
@@ -852,6 +873,15 @@ path:hover {
   cursor: not-allowed;
 }
 
+.mentors-card .btn-registration.disabled-open {
+  background-color: rgb(181, 80, 80) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: rgb(255, 255, 255) !important;
+  padding: 0.75rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
 /* Sponsorship Section */
 #sponsorship {
 background-color: #fff1f1;
@@ -1233,6 +1263,23 @@ html[dir="ltr"] .accordion-button::after {
 /* Responsive Design */
 @media (max-width: 992px) {
 
+  .announcement-bar {
+    padding-inline-start: 40px !important;
+    padding-inline-end: 40px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .announcement-bar p {
+    font-size: 13px;
+  }
+
+  .close-announcement {
+    font-size: 20px;
+    inset-inline-end: 10px;
+  }
+
+  
   .custom-navbar .navbar-collapse {
     background-color: rgb(45, 45, 45);
     backdrop-filter: blur(10px);

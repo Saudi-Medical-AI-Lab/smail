@@ -8,6 +8,8 @@
 const translations = {
   en: {
     // ── Navbar ──────────────────────────────────────────────
+    announcement_sponsorship: 'Sponsorship opportunities are now open for our program! <a href="#sponsorship" style="color: #920e0e; text-decoration: underline;">Learn more →</a>',
+    know_more: 'Learn more →',
     nav_home:         'Home',
     nav_about:        'About',
     nav_program:      'Program',
@@ -95,6 +97,7 @@ const translations = {
     
     cohort_title: "3rd Cohort",
     opening_soon: "Registration is Opening Soon",
+    register_now: "Register Now as a Mentor",
 
     sponsor_badge: "SPONSORSHIP",
     sponsor_heading: "Invest in the Next Generation of Researchers",
@@ -138,6 +141,7 @@ const translations = {
 
   ar: {
     // ── Navbar ──────────────────────────────────────────────
+    announcement_sponsorship: 'فرص الرعاية لبرنامجنا متاحة الآن ! <a href="#sponsorship" data-i18n="know_more" style="color: #920e0e; text-decoration: underline;">اعرف المزيد ←</a>',
     nav_home:         'الرئيسية',
     nav_about:        'من نحن',
     nav_program:      'البرنامج',
@@ -225,6 +229,7 @@ const translations = {
     
     cohort_title: "الدفعة الثالثة",
     opening_soon: "التسجيل يُتاح قريبًا",
+    register_now: "سجّل الآن كمرشد",
 
     sponsor_badge: "رعاية البرنامج",
     sponsor_heading: "استثمر في الجيل القادم من الباحثين",
