@@ -21,14 +21,15 @@ const translations = {
     nav_faq:          'FAQ',
 
     // ── Footer ──────────────────────────────────────────────
-    footer_tagline:   'Empowering tomorrow\'s innovators to reshape healthcare through AI-driven research.',
+    footer_tagline:   'A non-profit organization connecting talented students with expert researchers in medical artificial intelligence.',
     footer_contact:   'Contact Us',
     footer_copyright: '© 2026 Specialized Medical AI Lab. All Rights Reserved.',
-    footer_license:   'Licence No. 1100542400.',
+    footer_license:   'Supervised by the Saudi Data and AI Authority (SDAIA) | Licensed by the National Center for Non-Profit Sector under License No. 1100542400',
 
     // ── index.html ──────────────────────────────────────────
     hero_title:       'BRIDGING MINDS IN<br><span class="accent-red">SAUDI HEALTHCARE</span>',
     hero_subtitle:    'Connecting Saudi talent with global expertise to transform healthcare with AI.',
+    sdaia_text: 'Under the supervision of the Saudi Data and AI Authority (SDAIA)',
     btn_apply:        'Apply for Research',
     btn_mentor:       'Join as a Mentor',
     btn_staff:        'Join as Staff',
@@ -153,14 +154,15 @@ const translations = {
     nav_faq:          'الأسئلة الشائعة',
 
     // ── Footer ──────────────────────────────────────────────
-    footer_tagline:   'نُمكّن مبتكري الغد لإعادة تشكيل الرعاية الصحية من خلال البحث المدعوم بالذكاء الاصطناعي.',
-    footer_license:   'رقم الترخيص: 1100542400.',
+    footer_tagline:   'جمعية أهلية غير ربحية تعمل على ربط الطلاب المتميزين بالباحثين والخبراء في مجال الذكاء الاصطناعي الطبي,',
+    footer_license:   'تحت إشراف الهيئة السعودية للبيانات والذكاء الاصطناعي (سدايا) | مرخصة من المركز الوطني لتنمية القطاع غير الربحي برقم: 1100542400',
     footer_contact:   'تواصل معنا',
     footer_copyright: '© 2026 Specialized Medical AI Lab. All Rights Reserved.',
 
     // ── index.html ──────────────────────────────────────────
     hero_title:       'تمكين الابتكار في<br><span class="accent-red">الرعاية الصحية السعودية</span>',
     hero_subtitle:    'نُمكّن المواهب السعودية من المساهمة في تطوير مستقبل الذكاء الاصطناعي الطبي',
+    sdaia_text:       'تحت إشراف الهيئة السعودية للبيانات والذكاء الاصطناعي (سدايا)',
     btn_apply:        'انضم إلى البرنامج',
     btn_mentor:       'انضم كمرشد',
     btn_staff:        'انضم كمتطوع',
