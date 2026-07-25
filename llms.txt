@@ -1,0 +1,21 @@
+# SMAIL (Saudi Medical AI Lab)
+
+> SMAIL is an open, volunteer-driven research program that connects students at Saudi universities with experienced mentors worldwide to conduct AI-for-health research. The program is supervised by the Saudi Data and AI Authority (SDAIA) and licensed by the National Center for Non-Profit Sector (License No. 1100542400).
+
+SMAIL runs cohort-based mentorship: students are paired with mentors from top universities and institutions for hands-on medical AI research, with the goal of producing first-author research papers. The program is officially 6 months, expects roughly 15 hours/week of student commitment, and is currently open only to students enrolled at Saudi universities.
+
+Current program stats: 20+ mentors, 31+ students, cohorts ongoing.
+
+## Key pages
+
+- [Home](https://smail.org.sa/): Program overview, mission, statistics, application periods for students and mentors, and sponsorship information.
+- [Students](https://smail.org.sa/students.html): Profiles of students in the SMAIL program by cohort.
+- [Mentors](https://smail.org.sa/mentors.html): Profiles of mentors guiding SMAIL research by cohort.
+- [Staff](https://smail.org.sa/staff.html): The team running SMAIL, plus staff alumni.
+- [Publications](https://smail.org.sa/papers.html): Accepted and published research papers co-authored by SMAIL students and mentors.
+- [FAQ](https://smail.org.sa/FAQ.html): Answers to common questions about program length, time commitment, eligibility, and publication outcomes.
+
+## Contact
+
+- Email: Saudimedicalailab@gmail.com
+- LinkedIn: https://www.linkedin.com/company/saudi-medical-ai-lab
