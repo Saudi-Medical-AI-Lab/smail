@@ -85,7 +85,7 @@ const translations = {
     student_feat_2: "Flexible Remote Supervision",
     student_feat_3: "Global Academic Network",
     student_app_label: "Students Application Period",
-    student_date: "From July 7 to July 31, 2026",
+    student_date: "From July 27 to August 15, 2026",
     
     badge_mentors: "For Mentors",
     mentor_heading: "Share Your Expertise and Create Impact",
@@ -94,7 +94,7 @@ const translations = {
     mentor_feat_2: "Expanding Global Collaboration",
     mentor_feat_3: "Inspiring and Guiding Talented Students",
     mentor_app_label: "Mentor Application Period",
-    mentor_date: "From June 21 to July 31, 2026",
+    mentor_date: "From July 19 to August 9, 2026",
     
     cohort_title: "3rd Cohort",
     opening_soon: "Registration is Opening Soon",
@@ -218,7 +218,7 @@ const translations = {
     student_feat_2: "إشراف مرن عن بُعد",
     student_feat_3: "شبكة أكاديمية عالمية",
     student_app_label: "فترة استقبال طلبات الطلاب",
-    student_date: "من 7 يوليو إلى 31 يوليو 2026",
+    student_date: "من 27 يوليو إلى 15 أغسطس 2026",
     
     badge_mentors: "للمرشدين",
     mentor_heading: "شارك خبرتك واصنع الأثر",
@@ -227,7 +227,7 @@ const translations = {
     mentor_feat_2: "توسيع شبكة التعاون مع خبراء دوليين",
     mentor_feat_3: "إلهام المواهب الطلابية الواعدة وتوجيهها",
     mentor_app_label: "فترة تسجيل المرشدين",
-    mentor_date: "من 21 يونيو إلى 31 يوليو 2026",
+    mentor_date: "من 19 يوليو إلى 9 أغسطس 2026",
     
     cohort_title: "الدفعة الثالثة",
     opening_soon: "التسجيل يُتاح قريبًا",
