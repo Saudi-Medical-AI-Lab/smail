@@ -817,6 +817,28 @@ path:hover {
   transition: all 0.3s ease;
 }
 
+.btn-registration.disabled-open {
+  display: inline-block;
+  background-color: rgb(181, 80, 80) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: rgb(255, 255, 255) !important;
+  padding: 0.75rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.student-program-section .btn-registration.disabled-open {
+  background-color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #a6192e !important;
+}
+
+.student-program-section .btn-registration.disabled-open:hover {
+  background-color: #f2f2f2 !important;
+}
+
 /* Mentor Program Section */
 .mentor-program-section {
   background-color: #ffffff;

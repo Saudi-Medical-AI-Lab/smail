@@ -99,6 +99,7 @@ const translations = {
     cohort_title: "3rd Cohort",
     opening_soon: "Registration is Opening Soon",
     register_now: "Register Now as a Mentor",
+    register_now_student: "Register Now as a Student",
 
     sponsor_badge: "SPONSORSHIP",
     sponsor_heading: "Invest in the Next Generation of Researchers",
@@ -232,6 +233,7 @@ const translations = {
     cohort_title: "الدفعة الثالثة",
     opening_soon: "التسجيل يُتاح قريبًا",
     register_now: "سجّل الآن كمرشد",
+    register_now_student: "سجّل الآن كباحث",
 
     sponsor_badge: "رعاية البرنامج",
     sponsor_heading: "استثمر في الجيل القادم من الباحثين",
