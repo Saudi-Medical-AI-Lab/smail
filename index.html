@@ -55,7 +55,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark custom-navbar transparent">
     <div class="container">
-      <a class="navbar-brand pt-1" href="index.html">
+      <a class="navbar-brand pt-1" href="/">
         <img src="./images/SMAIL Updated.svg" width="120" alt="SMAIL Logo" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -65,7 +65,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <button class="close-navbar" aria-label="Close menu">&times;</button>
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html" data-i18n="nav_home">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="/" data-i18n="nav_home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav_about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#program" data-i18n="nav_program">Program</a></li>
           <li class="nav-item dropdown">
@@ -75,9 +75,11 @@
               <li><a class="dropdown-item" href="students.html" data-i18n="nav_students">Students</a></li>
               <li><a class="dropdown-item" href="mentors.html" data-i18n="nav_mentors">Mentors</a></li>
               <li><a class="dropdown-item" href="staff.html" data-i18n="nav_staff">Staff</a></li>
+              <li><a class="dropdown-item" href="board.html" data-i18n="nav_board">Board</a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="papers.html" data-i18n="nav_publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html" data-i18n="nav_news">News</a></li>
           <li class="nav-item"><a class="nav-link" href="FAQ.html" data-i18n="nav_faq">FAQ</a></li>
         </ul>
         <a href="https://www.sdaia.gov.sa/" target="_blank"><img src="./images/ai-year.svg" width="100" alt="AI Year Logo" /></a>
@@ -311,6 +313,50 @@
       </div>
     </div>
   </section>
+
+  <!-- News Teaser Section -->
+  <section id="news" class="section-light-pink news-teaser">
+    <div class="container">
+      <div class="news-teaser-header">
+        <div>
+          <h2 class="section-heading" data-i18n="news_teaser_heading">Latest from <span class="accent-red">SMAIL</span></h2>
+          <p data-i18n="news_teaser_desc">A quick look at what's new with the program.</p>
+        </div>
+        <a href="news.html" class="news-teaser-cta" data-i18n="news_view_all">View all news →</a>
+      </div>
+
+      <div class="news-teaser-grid">
+        <a href="https://onegiantleap.com/" target="_blank" rel="noopener noreferrer" class="news-card news-card-event" data-aos="fade-up">
+          <div class="news-card-top">
+            <span class="news-tag news-tag-event" data-i18n="news_tag_event">Event</span>
+            <img src="images/partners/leap-2026-logo.svg" alt="LEAP 2026" class="news-partner-logo news-partner-logo-sm" />
+          </div>
+          <h3 data-i18n="news_leap_title">SMAIL is heading to LEAP 2026</h3>
+          <p data-i18n="news_leap_desc_short">Find us in Riyadh, 31 August – 3 September 2026.</p>
+        </a>
+
+        <a href="#application" class="news-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="news-card-top">
+            <span class="news-tag news-tag-program" data-i18n="news_tag_program">Program</span>
+            <span class="news-date" data-i18n="news_cohort3_date">Aug 2026</span>
+          </div>
+          <h3 data-i18n="news_cohort3_title">Cohort 3 applications are open</h3>
+          <p data-i18n="news_cohort3_desc_short">Students can apply from July 27 to August 15, and mentors from July 19 to August 9.</p>
+          <span class="news-link" data-i18n="news_featured_cta">Apply now →</span>
+        </a>
+
+        <a href="#sponsorship" class="news-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="news-card-top">
+            <span class="news-tag news-tag-program" data-i18n="news_tag_program">Program</span>
+            <span class="news-date" data-i18n="news_sponsor_date">Jun 2026</span>
+          </div>
+          <h3 data-i18n="news_sponsor_title">Sponsorship opportunities are now open</h3>
+          <p data-i18n="news_sponsor_desc_short">Organizations can now sponsor the next cohort of Saudi student researchers.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- Application Section -->
   <section id="application" class="section-spacing">
     <div class="container">

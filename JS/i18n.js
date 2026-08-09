@@ -17,7 +17,9 @@ const translations = {
     nav_students:     'Students',
     nav_mentors:      'Mentors',
     nav_staff:        'Staff',
+    nav_board:        'Board',
     nav_publications: 'Publications',
+    nav_news:         'News',
     nav_faq:          'FAQ',
 
     // ── Footer ──────────────────────────────────────────────
@@ -125,6 +127,50 @@ const translations = {
     pub_desc:          'Accepted and published papers from our program\'s cohorts.',
     pub_authors_label: 'Authors:',
 
+    // ── news.html ──────────────────────────────────────────
+    news_badge:        'NEWS & UPDATES',
+    news_heading:      'Latest from <span class="accent-red">SMAIL</span>',
+    news_desc:         'Program milestones, publications, and announcements from the lab.',
+    news_tag_program:     'Program',
+    news_tag_publication: 'Publication',
+    news_tag_community:   'Community',
+    news_tag_event:       'Event',
+    news_featured_cta: 'Apply now →',
+    news_leap_cta: 'Explore LEAP 2026 →',
+    news_teaser_heading: 'Latest from <span class="accent-red">SMAIL</span>',
+    news_teaser_desc:    'A quick look at what\'s new with the program.',
+    news_view_all:       'View all news →',
+
+    news_leap_dateline_month: 'AUG',
+    news_leap_dateline_year:  '2026',
+    news_leap_date:      'Aug 2026',
+    news_leap_title:     'SMAIL is heading to LEAP 2026',
+    news_leap_desc_full: 'Find us in Riyadh as we connect with the region\'s tech community. 31 August – 3 September 2026, RECC Malham, Saudi Arabia.',
+    news_leap_desc_short: 'Find us in Riyadh, 31 August – 3 September 2026.',
+
+    news_cohort3_date:      'Aug 2026',
+    news_cohort3_title:     'Cohort 3 applications are open',
+    news_cohort3_desc_full: 'Students can apply from July 27 to August 15, and mentors from July 19 to August 9. Six months, fully remote, working toward a first-author paper.',
+    news_cohort3_desc_short: 'Students can apply from July 27 to August 15, and mentors from July 19 to August 9.',
+
+    news_sponsor_date:      'Jun 2026',
+    news_sponsor_title:     'Sponsorship opportunities are now open',
+    news_sponsor_desc_full: 'We\'re inviting organizations to sponsor the next cohort of Saudi student researchers and help scale the program.',
+    news_sponsor_desc_short: 'Organizations can now sponsor the next cohort of Saudi student researchers.',
+
+    news_biocreative_date:      'Aug 2025',
+    news_biocreative_title:     'SMAIL research heads to BioCreative IX',
+    news_biocreative_desc_full: 'A paper co-authored by a SMAIL student and mentor was accepted at the BioCreative IX Challenge and Workshop, part of IJCAI 2025, 16–22 August 2025 in Montreal, Canada.',
+    news_biocreative_desc_short: 'A paper co-authored by a SMAIL student and mentor was accepted at IJCAI 2025 in Montreal, Canada.',
+
+    news_arabic_date:  'Jun 2026',
+    news_arabic_title: 'The SMAIL website is now available in Arabic',
+    news_arabic_desc:  'Use the AR toggle in the navigation bar to read the whole site, including the program and application details, in Arabic.',
+
+    news_growth_date:  '2026',
+    news_growth_title: '20+ mentors, 31+ students, and growing',
+    news_growth_desc:  'Across two completed cohorts, SMAIL has paired Saudi university students with mentors from institutions including Stanford, Oxford, and CMU.',
+
     // ── mentors.html ─────────────────────────────────────────
     mentors_heading:   'Our <span class="accent-red">Mentors</span>',
     cohort_1_tab:      'Cohort 1',
@@ -136,6 +182,12 @@ const translations = {
     // ── staff.html ───────────────────────────────────────────
     staff_heading:     'Our <span class="accent-red">Staff</span>',
     staff_alumni_heading: 'Staff <span class="accent-red">Alumni</span>',
+
+    // ── board.html ───────────────────────────────────────────
+    board_heading:     'Board <span class="accent-red">Members</span>',
+    board_role_chairman:      'Chairman of the Board',
+    board_role_vice_chairman: 'Vice Chairman of the Board',
+    board_role_member:        'Board Member',
 
     // ── Lang switcher label ──────────────────────────────────
     lang_toggle_label: 'AR',
@@ -151,7 +203,9 @@ const translations = {
     nav_students:     'الطلاب',
     nav_mentors:      'المرشدون',
     nav_staff:        'الفريق',
+    nav_board:        'مجلس الإدارة',
     nav_publications: 'المنشورات',
+    nav_news:         'الأخبار',
     nav_faq:          'الأسئلة الشائعة',
 
     // ── Footer ──────────────────────────────────────────────
@@ -259,6 +313,50 @@ const translations = {
     pub_desc:          'الأوراق البحثية المقبولة والمنشورة من طلاب البرنامج.',
     pub_authors_label: 'المؤلفون:',
 
+    // ── news.html ──────────────────────────────────────────
+    news_badge:        'الأخبار والمستجدات',
+    news_heading:      'آخر مستجدات <span class="accent-red">سمايل</span>',
+    news_desc:         'أبرز إنجازات البرنامج والأبحاث المنشورة والإعلانات الرسمية من المختبر.',
+    news_tag_program:     'البرنامج',
+    news_tag_publication: 'منشور بحثي',
+    news_tag_community:   'المجتمع',
+    news_tag_event:       'فعالية',
+    news_featured_cta: 'قدّم الآن ←',
+    news_leap_cta: 'اكتشف LEAP 2026 ←',
+    news_teaser_heading: 'آخر مستجدات <span class="accent-red">سمايل</span>',
+    news_teaser_desc:    'نظرة سريعة على أحدث ما يجري في البرنامج.',
+    news_view_all:       'عرض جميع الأخبار ←',
+
+    news_leap_dateline_month: 'أغسطس',
+    news_leap_dateline_year:  '2026',
+    news_leap_date:      'أغسطس 2026',
+    news_leap_title:     'سمايل متوجهة إلى LEAP 2026',
+    news_leap_desc_full: 'تواصلوا معنا في الرياض ضمن مجتمع التقنية الإقليمي، من 31 أغسطس إلى 3 سبتمبر 2026، في مركز الرياض الدولي للمعارض والمؤتمرات (RECC)، المملكة العربية السعودية.',
+    news_leap_desc_short: 'تواصلوا معنا في الرياض، من 31 أغسطس إلى 3 سبتمبر 2026.',
+
+    news_cohort3_date:      'أغسطس 2026',
+    news_cohort3_title:     'التسجيل في الدفعة الثالثة متاح الآن',
+    news_cohort3_desc_full: 'يمكن للطلاب التقديم من 27 يوليو إلى 15 أغسطس، وللمرشدين من 19 يوليو إلى 9 أغسطس. برنامج مدته 6 أشهر، عن بُعد بالكامل، للمساهمة في نشر ورقة بحثية كمؤلف أول.',
+    news_cohort3_desc_short: 'يمكن للطلاب التقديم من 27 يوليو إلى 15 أغسطس، وللمرشدين من 19 يوليو إلى 9 أغسطس.',
+
+    news_sponsor_date:      'يونيو 2026',
+    news_sponsor_title:     'فرص الرعاية لبرنامجنا متاحة الآن',
+    news_sponsor_desc_full: 'ندعو المؤسسات لرعاية الدفعة القادمة من الباحثين السعوديين والمساهمة في توسيع نطاق البرنامج.',
+    news_sponsor_desc_short: 'يمكن للمؤسسات الآن رعاية الدفعة القادمة من الباحثين السعوديين.',
+
+    news_biocreative_date:      'أغسطس 2025',
+    news_biocreative_title:     'أبحاث سمايل تصل إلى مؤتمر BioCreative IX',
+    news_biocreative_desc_full: 'ورقة بحثية شارك في تأليفها طالب ومرشد من سمايل تم قبولها في تحدي وورشة عمل BioCreative IX، ضمن فعاليات IJCAI 2025، من 16 إلى 22 أغسطس 2025 في مونتريال، كندا.',
+    news_biocreative_desc_short: 'ورقة بحثية شارك في تأليفها طالب ومرشد من سمايل تم قبولها في IJCAI 2025 بمونتريال، كندا.',
+
+    news_arabic_date:  'يونيو 2026',
+    news_arabic_title: 'موقع سمايل الإلكتروني متاح الآن باللغة العربية',
+    news_arabic_desc:  'استخدم زر التبديل AR في شريط التنقل لقراءة الموقع بالكامل باللغة العربية، بما في ذلك تفاصيل البرنامج والتقديم.',
+
+    news_growth_date:  '2026',
+    news_growth_title: 'أكثر من 20 مرشدًا و31 طالبًا، والعدد في تزايد',
+    news_growth_desc:  'عبر دفعتين مكتملتين، جمعت سمايل بين طلاب الجامعات السعودية ومرشدين من مؤسسات عالمية منها ستانفورد وأكسفورد و CMU.',
+
     // ── mentors.html ─────────────────────────────────────────
     mentors_heading:   'مرشدونا <span class="accent-red">المتميزون</span>',
     cohort_1_tab:      'الدفعة الأولى',
@@ -270,6 +368,12 @@ const translations = {
     // ── staff.html ───────────────────────────────────────────
     staff_heading:     'فريق <span class="accent-red">العمل</span>',
     staff_alumni_heading: 'خريجو <span class="accent-red">الفريق</span>',
+
+    // ── board.html ───────────────────────────────────────────
+    board_heading:     'أعضاء <span class="accent-red">مجلس الإدارة</span>',
+    board_role_chairman:      'رئيس مجلس الإدارة',
+    board_role_vice_chairman: 'نائب رئيس مجلس الإدارة',
+    board_role_member:        'عضو مجلس الإدارة',
 
     // ── Lang switcher label ──────────────────────────────────
     lang_toggle_label: 'EN',

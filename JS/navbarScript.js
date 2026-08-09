@@ -35,3 +35,48 @@ if (closeBtn && navbarCollapse) {
     if (bsCollapse) bsCollapse.hide();
   });
 }
+
+// ── Scroll to homepage sections without ever showing a # in the URL ──
+(function anchorScrollNoHash() {
+  const SCROLL_KEY = 'smail-scroll-target';
+
+  function isHomePath(pathname) {
+    return pathname === '/' || pathname.endsWith('/index.html');
+  }
+
+  function scrollToId(id) {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'auto', block: 'start' });
+  }
+
+  document.querySelectorAll('a[href]').forEach(function (link) {
+    const href = link.getAttribute('href');
+    let targetId = null;
+
+    if (href.startsWith('#') && href.length > 1) {
+      targetId = href.slice(1);
+    } else if (href.startsWith('/#')) {
+      targetId = href.slice(2);
+    } else {
+      return;
+    }
+
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (isHomePath(location.pathname)) {
+        scrollToId(targetId);
+      } else {
+        sessionStorage.setItem(SCROLL_KEY, targetId);
+        window.location.href = '/';
+      }
+    });
+  });
+
+  if (isHomePath(location.pathname)) {
+    const pending = sessionStorage.getItem(SCROLL_KEY);
+    if (pending) {
+      sessionStorage.removeItem(SCROLL_KEY);
+      setTimeout(function () { scrollToId(pending); }, 100);
+    }
+  }
+})();
