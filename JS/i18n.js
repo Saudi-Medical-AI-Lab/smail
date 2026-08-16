@@ -87,7 +87,7 @@ const translations = {
     student_feat_2: "Flexible Remote Supervision",
     student_feat_3: "Global Academic Network",
     student_app_label: "Students Application Period",
-    student_date: "From July 27 to August 15, 2026",
+    student_date: "From July 27 to September 4, 2026",
     
     badge_mentors: "For Mentors",
     mentor_heading: "Share Your Expertise and Create Impact",
@@ -273,7 +273,7 @@ const translations = {
     student_feat_2: "إشراف مرن عن بُعد",
     student_feat_3: "شبكة أكاديمية عالمية",
     student_app_label: "فترة استقبال طلبات الطلاب",
-    student_date: "من 27 يوليو إلى 15 أغسطس 2026",
+    student_date: "من 27 يوليو إلى 4 سبتمبر 2026",
     
     badge_mentors: "للمرشدين",
     mentor_heading: "شارك خبرتك واصنع الأثر",
