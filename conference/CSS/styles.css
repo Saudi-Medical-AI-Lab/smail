@@ -51,6 +51,7 @@ body {
   background-color: var(--bg);
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   font-family: var(--font-body);
   min-height: 100vh;
   display: flex;
@@ -574,13 +575,19 @@ table.data-table .cell-sub {
 /* ============================================================
    Countdown — plain, tabular, no glow
    ============================================================ */
-.countdown-strip { display: flex; gap: 1px; background: var(--border); border: 1px solid var(--border); width: fit-content; }
+.countdown-strip { display: flex; flex-wrap: wrap; gap: 1px; background: var(--border); border: 1px solid var(--border); width: fit-content; max-width: 100%; }
 
 .countdown-unit {
   background: var(--surface);
   padding: 0.6rem 1rem;
   min-width: 70px;
+  flex: 1 1 auto;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  .countdown-strip { width: 100%; }
+  .countdown-unit { min-width: 0; flex-basis: calc(50% - 1px); padding: 0.5rem 0.75rem; }
 }
 
 .countdown-unit .num {
