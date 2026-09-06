@@ -87,7 +87,7 @@ const translations = {
     student_feat_2: "Flexible Remote Supervision",
     student_feat_3: "Global Academic Network",
     student_app_label: "Students Application Period",
-    student_date: "From August 16 to September 4, 2026",
+    student_date: "From August 16 to September 15, 2026",
     
     badge_mentors: "For Mentors",
     mentor_heading: "Share Your Expertise and Create Impact",
@@ -96,7 +96,7 @@ const translations = {
     mentor_feat_2: "Expanding Global Collaboration",
     mentor_feat_3: "Inspiring and Guiding Talented Students",
     mentor_app_label: "Mentor Application Period",
-    mentor_date: "From July 19 to August 9, 2026",
+    mentor_date: "From July 19 to September 15, 2026",
     
     cohort_title: "3rd Cohort",
     opening_soon: "Registration is Opening Soon",
@@ -150,8 +150,8 @@ const translations = {
 
     news_cohort3_date:      'Aug 2026',
     news_cohort3_title:     'Cohort 3 applications are open',
-    news_cohort3_desc_full: 'Students can apply from August 16 to September 4, and mentors from July 19 to August 9. Six months, fully remote, working toward a first-author paper.',
-    news_cohort3_desc_short: 'Students can apply from August 16 to September 4, and mentors from July 19 to August 9.',
+    news_cohort3_desc_full: 'Students can apply from August 16 to September 15, and mentors from July 19 to September 15. Six months, fully remote, working toward a first-author paper.',
+    news_cohort3_desc_short: 'Students can apply from August 16 to September 15, and mentors from July 19 to September 15.',
 
     news_sponsor_date:      'Jun 2026',
     news_sponsor_title:     'Sponsorship opportunities are now open',
@@ -273,7 +273,7 @@ const translations = {
     student_feat_2: "إشراف مرن عن بُعد",
     student_feat_3: "شبكة أكاديمية عالمية",
     student_app_label: "فترة استقبال طلبات الطلاب",
-    student_date: "من 16 أغسطس إلى 4 سبتمبر 2026",
+    student_date: "من 16 أغسطس إلى 15 سبتمبر 2026",
     
     badge_mentors: "للمرشدين",
     mentor_heading: "شارك خبرتك واصنع الأثر",
@@ -282,7 +282,7 @@ const translations = {
     mentor_feat_2: "توسيع شبكة التعاون مع خبراء دوليين",
     mentor_feat_3: "إلهام المواهب الطلابية الواعدة وتوجيهها",
     mentor_app_label: "فترة تسجيل المرشدين",
-    mentor_date: "من 19 يوليو إلى 9 أغسطس 2026",
+    mentor_date: "من 19 يوليو إلى 15 سبتمبر 2026",
     
     cohort_title: "الدفعة الثالثة",
     opening_soon: "التسجيل يُتاح قريبًا",
@@ -336,8 +336,8 @@ const translations = {
 
     news_cohort3_date:      'أغسطس 2026',
     news_cohort3_title:     'التسجيل في الدفعة الثالثة متاح الآن',
-    news_cohort3_desc_full: 'يمكن للطلاب التقديم من 16 أغسطس إلى 4 سبتمبر، وللمرشدين من 19 يوليو إلى 9 أغسطس. برنامج مدته 6 أشهر، عن بُعد بالكامل، للمساهمة في نشر ورقة بحثية كمؤلف أول.',
-    news_cohort3_desc_short: 'يمكن للطلاب التقديم من 16 أغسطس إلى 4 سبتمبر، وللمرشدين من 19 يوليو إلى 9 أغسطس.',
+    news_cohort3_desc_full: 'يمكن للطلاب التقديم من 16 أغسطس إلى 15 سبتمبر، وللمرشدين من 19 يوليو إلى 15 سبتمبر. برنامج مدته 6 أشهر، عن بُعد بالكامل، للمساهمة في نشر ورقة بحثية كمؤلف أول.',
+    news_cohort3_desc_short: 'يمكن للطلاب التقديم من 16 أغسطس إلى 15 سبتمبر، وللمرشدين من 19 يوليو إلى 15 سبتمبر.',
 
     news_sponsor_date:      'يونيو 2026',
     news_sponsor_title:     'فرص الرعاية لبرنامجنا متاحة الآن',
