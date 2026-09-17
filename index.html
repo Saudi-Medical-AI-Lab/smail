@@ -9,12 +9,12 @@
   <meta property="og:description" content="Join the open research program for Medical AI in Saudi Arabia.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://smail.org.sa/">
-  <meta property="og:image" content="https://smail.org.sa/images/Riyadhero.png">
+  <meta property="og:image" content="https://smail.org.sa/images/Riyadhero-fallback.jpg">
   <meta property="og:site_name" content="SMAIL">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="SMAIL | Saudi Medical AI Research Lab">
   <meta name="twitter:description" content="Join the open research program for Medical AI in Saudi Arabia.">
-  <meta name="twitter:image" content="https://smail.org.sa/images/Riyadhero.png">
+  <meta name="twitter:image" content="https://smail.org.sa/images/Riyadhero-fallback.jpg">
   <link rel="canonical" href="https://smail.org.sa/">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -91,7 +91,10 @@
   <!-- Hero Section -->
   <section class="hero-section position-relative mb-5">
     <div class="hero-overlay"></div>
-    <img src="images/Riyadhero.png" class="hero-image" alt="Riyadh Cityscape" />
+    <picture>
+      <source srcset="images/Riyadhero.webp" type="image/webp" />
+      <img src="images/Riyadhero-fallback.jpg" class="hero-image" alt="Riyadh Cityscape" width="1536" height="1024" fetchpriority="high" decoding="async" />
+    </picture>
     <div class="hero-content">
       <div class="container">
         <div class="hero-text">
@@ -290,23 +293,23 @@
           Universities & Institutions</span></h2>
       <div class="universities-carousel mt-5">
         <div class="universities-track">
-          <div class="university-logo"><img src="images/uni logos/Kacst 1.png" alt="KACST" /></div>
-          <div class="university-logo"><img src="images/uni logos/CMU 1.png" alt="Carnegie Mellon University" /></div>
-          <div class="university-logo"><img src="images/uni logos/KAU 1.png" alt="King Abdulaziz University" /></div>
+          <div class="university-logo"><img src="images/uni logos/Kacst 1.png" alt="KACST" loading="lazy" decoding="async" /></div>
+          <div class="university-logo"><img src="images/uni logos/CMU 1.png" alt="Carnegie Mellon University" loading="lazy" decoding="async" /></div>
+          <div class="university-logo"><img src="images/uni logos/KAU 1.png" alt="King Abdulaziz University" loading="lazy" decoding="async" /></div>
           <div class="university-logo"><img src="images/uni logos/KSAU 1.png"
-              alt="King Saud bin Abdulaziz University" /></div>
-          <div class="university-logo"><img src="images/uni logos/Oxford 1.png" alt="University of Oxford" /></div>
-          <div class="university-logo"><img src="images/uni logos/Stanford 1.png" alt="Stanford University" /></div>
-          <div class="university-logo"><img src="images/uni logos/IAU.svg" alt="IAU university" /></div>
-          <div class="university-logo"><img src="images/uni logos/BU.png" alt="BU University" /></div>
-          <div class="university-logo"><img src="images/uni logos/KLD.png" alt="KLD University" /></div>
-          <div class="university-logo"><img src="images/uni logos/ODU.png" alt="ODU University" /></div>
-          <div class="university-logo"><img src="images/uni logos/PSU.png" alt="PSU University" /></div>
-          <div class="university-logo"><img src="images/uni logos/Qassim.svg" alt="Qassim University" /></div>
-          <div class="university-logo"><img src="images/uni logos/Sousse.png" alt="Sousse University" /></div>
-          <div class="university-logo"><img src="images/uni logos/Tibah.png" alt="Tibah University" /></div>
-          <div class="university-logo"><img src="images/uni logos/UoH.png" alt="UoH University" /></div>
-          <div class="university-logo"><img src="images/uni logos/UPM.png" alt="UPM University" /></div>
+              alt="King Saud bin Abdulaziz University" loading="lazy" decoding="async" /></div>
+          <div class="university-logo"><img src="images/uni logos/Oxford 1.png" alt="University of Oxford" loading="lazy" decoding="async" /></div>
+          <div class="university-logo"><img src="images/uni logos/Stanford 1.png" alt="Stanford University" loading="lazy" decoding="async" /></div>
+          <div class="university-logo"><img src="images/uni logos/IAU.svg" alt="IAU university" loading="lazy" decoding="async" /></div>
+          <div class="university-logo"><img src="images/uni logos/BU.png" alt="BU University" loading="lazy" decoding="async" /></div>
+          <div class="university-logo"><img src="images/uni logos/KLD.png" alt="KLD University" loading="lazy" decoding="async" /></div>
+          <div class="university-logo"><img src="images/uni logos/ODU.png" alt="ODU University" loading="lazy" decoding="async" /></div>
+          <div class="university-logo"><img src="images/uni logos/PSU.png" alt="PSU University" loading="lazy" decoding="async" /></div>
+          <div class="university-logo"><img src="images/uni logos/Qassim.svg" alt="Qassim University" loading="lazy" decoding="async" /></div>
+          <div class="university-logo"><img src="images/uni logos/Sousse.png" alt="Sousse University" loading="lazy" decoding="async" /></div>
+          <div class="university-logo"><img src="images/uni logos/Tibah.png" alt="Tibah University" loading="lazy" decoding="async" /></div>
+          <div class="university-logo"><img src="images/uni logos/UoH.png" alt="UoH University" loading="lazy" decoding="async" /></div>
+          <div class="university-logo"><img src="images/uni logos/UPM.png" alt="UPM University" loading="lazy" decoding="async" /></div>
         </div>
       </div>
     </div>
@@ -327,7 +330,7 @@
         <a href="https://onegiantleap.com/" target="_blank" rel="noopener noreferrer" class="news-card news-card-event" data-aos="fade-up">
           <div class="news-card-top">
             <span class="news-tag news-tag-event" data-i18n="news_tag_event">Event</span>
-            <img src="images/partners/leap-2026-logo.svg" alt="LEAP 2026" class="news-partner-logo news-partner-logo-sm" />
+            <img src="images/partners/leap-2026-logo.svg" alt="LEAP 2026" class="news-partner-logo news-partner-logo-sm" loading="lazy" decoding="async" />
           </div>
           <h3 data-i18n="news_leap_title">SMAIL is heading to LEAP 2026</h3>
           <p data-i18n="news_leap_desc_short">Find us in Riyadh, 31 August – 3 September 2026.</p>
