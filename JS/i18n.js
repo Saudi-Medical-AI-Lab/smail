@@ -137,7 +137,6 @@ const translations = {
     news_tag_publication: 'Publication',
     news_tag_community:   'Community',
     news_tag_event:       'Event',
-    news_featured_cta: 'Apply now →',
     news_leap_cta: 'Explore LEAP 2026 →',
     news_teaser_heading: 'Latest from <span class="accent-red">SMAIL</span>',
     news_teaser_desc:    'A quick look at what\'s new with the program.',
@@ -151,6 +150,8 @@ const translations = {
     news_leap_desc_short: 'Find us in Riyadh, 31 August – 3 September 2026.',
 
     news_cohort3_date:      'Sep 2026',
+    news_cohort3_dateline_month: 'SEP',
+    news_cohort3_dateline_year:  '2026',
     news_cohort3_title:     'Cohort 3 registration is now closed — thank you!',
     news_cohort3_desc_full: 'Applications for both students and mentors are now closed. Thank you to everyone who applied — we were glad to see so much interest in advancing medical AI research. Stay tuned for updates on the next cohort.',
     news_cohort3_desc_short: 'Applications for both students and mentors are now closed. Thank you to everyone who applied — stay tuned for the next cohort.',
@@ -325,7 +326,6 @@ const translations = {
     news_tag_publication: 'منشور بحثي',
     news_tag_community:   'المجتمع',
     news_tag_event:       'فعالية',
-    news_featured_cta: 'قدّم الآن ←',
     news_leap_cta: 'اكتشف LEAP 2026 ←',
     news_teaser_heading: 'آخر مستجدات <span class="accent-red">سمايل</span>',
     news_teaser_desc:    'نظرة سريعة على أحدث ما يجري في البرنامج.',
@@ -339,6 +339,8 @@ const translations = {
     news_leap_desc_short: 'تواصلوا معنا في الرياض، من 31 أغسطس إلى 3 سبتمبر 2026.',
 
     news_cohort3_date:      'سبتمبر 2026',
+    news_cohort3_dateline_month: 'سبتمبر',
+    news_cohort3_dateline_year:  '2026',
     news_cohort3_title:     'التسجيل في الدفعة الثالثة مغلق الآن — شكرًا لكم!',
     news_cohort3_desc_full: 'أُغلق التسجيل الآن لكل من الطلاب والمرشدين. شكرًا لكل من تقدّم بطلب — سعدنا برؤية هذا الاهتمام الكبير بدفع أبحاث الذكاء الاصطناعي الطبي إلى الأمام. تابعونا لمعرفة تفاصيل الدفعة القادمة.',
     news_cohort3_desc_short: 'أُغلق التسجيل الآن لكل من الطلاب والمرشدين. شكرًا لكل من تقدّم بطلب — تابعونا لمعرفة تفاصيل الدفعة القادمة.',
