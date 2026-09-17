@@ -102,6 +102,8 @@ const translations = {
     opening_soon: "Registration is Opening Soon",
     register_now: "Register Now as a Mentor",
     register_now_student: "Register Now as a Student",
+    registration_closed: "Registration Closed",
+    registration_closed_note: "Thank you to everyone who applied! We'll announce the next cohort soon.",
 
     sponsor_badge: "SPONSORSHIP",
     sponsor_heading: "Invest in the Next Generation of Researchers",
@@ -148,10 +150,10 @@ const translations = {
     news_leap_desc_full: 'Find us in Riyadh as we connect with the region\'s tech community. 31 August – 3 September 2026, RECC Malham, Saudi Arabia.',
     news_leap_desc_short: 'Find us in Riyadh, 31 August – 3 September 2026.',
 
-    news_cohort3_date:      'Aug 2026',
-    news_cohort3_title:     'Cohort 3 applications are open',
-    news_cohort3_desc_full: 'Students can apply from August 16 to September 15, and mentors from July 19 to September 15. Six months, fully remote, working toward a first-author paper.',
-    news_cohort3_desc_short: 'Students can apply from August 16 to September 15, and mentors from July 19 to September 15.',
+    news_cohort3_date:      'Sep 2026',
+    news_cohort3_title:     'Cohort 3 registration is now closed — thank you!',
+    news_cohort3_desc_full: 'Applications for both students and mentors are now closed. Thank you to everyone who applied — we were glad to see so much interest in advancing medical AI research. Stay tuned for updates on the next cohort.',
+    news_cohort3_desc_short: 'Applications for both students and mentors are now closed. Thank you to everyone who applied — stay tuned for the next cohort.',
 
     news_sponsor_date:      'Jun 2026',
     news_sponsor_title:     'Sponsorship opportunities are now open',
@@ -288,6 +290,8 @@ const translations = {
     opening_soon: "التسجيل يُتاح قريبًا",
     register_now: "سجّل الآن كمرشد",
     register_now_student: "سجّل الآن كباحث",
+    registration_closed: "التسجيل مغلق",
+    registration_closed_note: "شكرًا لكل من تقدّم بطلب! سنعلن عن الدفعة القادمة قريبًا.",
 
     sponsor_badge: "رعاية البرنامج",
     sponsor_heading: "استثمر في الجيل القادم من الباحثين",
@@ -334,10 +338,10 @@ const translations = {
     news_leap_desc_full: 'تواصلوا معنا في الرياض ضمن مجتمع التقنية الإقليمي، من 31 أغسطس إلى 3 سبتمبر 2026، في مركز الرياض الدولي للمعارض والمؤتمرات (RECC)، المملكة العربية السعودية.',
     news_leap_desc_short: 'تواصلوا معنا في الرياض، من 31 أغسطس إلى 3 سبتمبر 2026.',
 
-    news_cohort3_date:      'أغسطس 2026',
-    news_cohort3_title:     'التسجيل في الدفعة الثالثة متاح الآن',
-    news_cohort3_desc_full: 'يمكن للطلاب التقديم من 16 أغسطس إلى 15 سبتمبر، وللمرشدين من 19 يوليو إلى 15 سبتمبر. برنامج مدته 6 أشهر، عن بُعد بالكامل، للمساهمة في نشر ورقة بحثية كمؤلف أول.',
-    news_cohort3_desc_short: 'يمكن للطلاب التقديم من 16 أغسطس إلى 15 سبتمبر، وللمرشدين من 19 يوليو إلى 15 سبتمبر.',
+    news_cohort3_date:      'سبتمبر 2026',
+    news_cohort3_title:     'التسجيل في الدفعة الثالثة مغلق الآن — شكرًا لكم!',
+    news_cohort3_desc_full: 'أُغلق التسجيل الآن لكل من الطلاب والمرشدين. شكرًا لكل من تقدّم بطلب — سعدنا برؤية هذا الاهتمام الكبير بدفع أبحاث الذكاء الاصطناعي الطبي إلى الأمام. تابعونا لمعرفة تفاصيل الدفعة القادمة.',
+    news_cohort3_desc_short: 'أُغلق التسجيل الآن لكل من الطلاب والمرشدين. شكرًا لكل من تقدّم بطلب — تابعونا لمعرفة تفاصيل الدفعة القادمة.',
 
     news_sponsor_date:      'يونيو 2026',
     news_sponsor_title:     'فرص الرعاية لبرنامجنا متاحة الآن',
