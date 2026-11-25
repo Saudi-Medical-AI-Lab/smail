@@ -508,83 +508,125 @@ body::-webkit-scrollbar {
   filter: brightness(0.95);
 }
 
-/* Saudi Arabia Map */
-.saudi-map-container {
-  text-align: center;
-   width: 100%;
+/* Saudi community network: map, readout, ranked list */
+.community {
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --c-none: #e8e4e4;
+  --c-low: #efb9b9;
+  --c-medium: #e07a7a;
+  --c-high: #cc3333;
+  --ink: #2d2d2d;
+  --ink-soft: #5f5a5a;
+  --rule: #e3dede;
 }
 
-.saudi-map-container svg {
-  width: 100%;
-  height: 700px;
-  display: block;
+.community-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  grid-template-areas: "map readout" "map list";
+  grid-template-rows: auto 1fr;
+  column-gap: clamp(2rem, 5vw, 5rem);
+  row-gap: 1.5rem;
+  margin-top: 3rem;
+  align-items: start;
 }
 
-path {
-  fill: #edebeb;        
-  stroke: #ffffff;
-  stroke-width: 1;
+.community-map { grid-area: map; margin: 0; }
+.community-readout { grid-area: readout; min-height: 9.5rem; }
+.community-list { grid-area: list; }
+
+.map { display: block; width: 100%; height: auto; max-height: 640px; }
+
+.map path {
+  fill: var(--c-none);
+  stroke: #fff;
+  stroke-width: 1.5;
   cursor: pointer;
-  transition: fill 0.25s ease;
+  transition: fill 160ms var(--ease-out), opacity 160ms var(--ease-out);
 }
+.community.is-ready .map path.low { fill: var(--c-low); transition-delay: var(--d); }
+.community.is-ready .map path.medium { fill: var(--c-medium); transition-delay: var(--d); }
+.community.is-ready .map path.high { fill: var(--c-high); transition-delay: var(--d); }
+.community.is-settled .map path { transition-delay: 0ms; }
+.map.has-active path:not(.is-active) { opacity: 0.5; }
+.map path.is-active { stroke: var(--ink); stroke-width: 2.5; }
 
-path:hover {
-  fill: #d32f2f;       
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  font-size: 0.875rem;
+  color: var(--ink-soft);
 }
+.map-legend li { display: flex; align-items: center; gap: 0.5rem; }
+.sw { display: inline-block; width: 0.9rem; height: 0.9rem; }
+.sw.none { background: var(--c-none); }
+.sw.low { background: var(--c-low); }
+.sw.medium { background: var(--c-medium); }
+.sw.high { background: var(--c-high); }
 
-.low {
-  fill: #d2d1d190;  
+.readout-kicker { margin: 0 0 0.25rem; font-size: 0.95rem; font-weight: 600; color: var(--ink-soft); }
+.readout-figure { margin: 0; display: flex; align-items: baseline; gap: 0.75rem; line-height: 1; }
+.readout-num { font-size: clamp(3.5rem, 8vw, 6rem); font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; }
+.readout-unit { font-size: 1.25rem; color: var(--ink); }
+.readout-note { margin: 0.75rem 0 0; color: var(--ink-soft); }
+
+.region-rank { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+.rank-row {
+  display: grid;
+  grid-template-columns: 9.5rem minmax(0, 1fr) 2.5rem;
+  align-items: center;
+  gap: 0.9rem;
+  width: 100%;
+  padding: 0.7rem 0.5rem;
+  border: 0;
+  border-bottom: 1px solid var(--rule);
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+  transition: background-color 160ms var(--ease-out);
 }
-
-.medium {
-  fill: #c1c0c0a8;  
-}
-
-.high {
-  fill: #9d9c9ca0; 
-}
-
-#tooltip {
-  position: absolute;
-  background: #fff8f8;    
-  border: 1.5px solid #f44336;
-  padding: 8px 12px; 
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #333;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
-  pointer-events: none;
-  display: none;
-  z-index: 1000;
-  text-align: center;
-  transition: all 0.2s ease;
-}
-
-#tooltip.show {
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
-}
-
-#tooltip .title {
+.rank-row.is-active { background: var(--light-pink); }
+.rank-row.is-active .rank-name { font-weight: 700; }
+.rank-bar { display: block; height: 0.5rem; }
+.rank-bar i {
   display: block;
-  font-weight: 700;
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 4px;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 420ms var(--ease-out) var(--d, 0ms);
+}
+[dir="rtl"] .rank-bar i { transform-origin: right center; }
+.community.is-ready .rank-bar i { transform: scaleX(var(--w)); }
+.community.is-settled .rank-bar i { transition-delay: 0ms; }
+.rank-bar i.low { background: var(--c-low); }
+.rank-bar i.medium { background: var(--c-medium); }
+.rank-bar i.high { background: var(--c-high); }
+.rank-count { text-align: end; font-weight: 700; font-variant-numeric: tabular-nums; }
+
+.rank-row:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+@media (hover: hover) and (pointer: fine) {
+  .rank-row:hover { background: var(--light-pink); }
 }
 
-#tooltip .count {
-  display: block;  
-  font-size: 14px;
-  color: #555;
+@media (prefers-reduced-motion: reduce) {
+  .map path, .rank-bar i, .rank-row { transition: none; }
 }
 
-#tooltip .percentage {
-  display: block;
-  font-size: 20px;
-  color: #b71c1c;
-  margin-top: 2px;
+@media (max-width: 767.98px) {
+  .community-grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "readout" "map" "list";
+    grid-template-rows: auto;
+  }
+  .community-readout { min-height: 8rem; }
+  .rank-row { grid-template-columns: 7.5rem minmax(0, 1fr) 2rem; }
 }
 
 /* Universities Row */
@@ -1331,9 +1373,6 @@ html[dir="ltr"] .accordion-button::after {
     backdrop-filter: blur(10px);
     padding: 1rem 0;
   }
-  .saudi-map-container svg {
-  height: 400px;
-}
 
 .universities-track {
   gap: 2.5rem;

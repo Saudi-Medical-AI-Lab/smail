@@ -58,6 +58,19 @@ const translations = {
     community_heading:   'Saudi <span class="accent-red">Community Network</span>',
     community_desc:      'Explore each region to learn more about the student participation across Saudi Arabia\'s regions.',
 
+    community_kicker: 'Across the Kingdom',
+    community_unit: 'students',
+    community_unit_one: 'student',
+    community_regions_note: 'across {active} of {total} regions',
+    community_share_note: '{pct}% of all SMAIL students',
+    community_zero_note: 'No students from this region yet.',
+    community_list_label: 'Students by region',
+    community_legend_label: 'Students per region',
+    community_map_label: 'Map of Saudi Arabia shaded by the number of SMAIL students in each region',
+    legend_none: 'No students yet',
+    legend_low: '1 to 4',
+    legend_medium: '5 to 9',
+    legend_high: '10 or more',
     tooltip_students: "Students",
     tooltip_percentage: "Percentage",
 
@@ -152,9 +165,9 @@ const translations = {
     news_cohort3_date:      'Sep 2026',
     news_cohort3_dateline_month: 'SEP',
     news_cohort3_dateline_year:  '2026',
-    news_cohort3_title:     'Cohort 3 registration is now closed — thank you!',
-    news_cohort3_desc_full: 'Applications for both students and mentors are now closed. Thank you to everyone who applied — we were glad to see so much interest in advancing medical AI research. Stay tuned for updates on the next cohort.',
-    news_cohort3_desc_short: 'Applications for both students and mentors are now closed. Thank you to everyone who applied — stay tuned for the next cohort.',
+    news_cohort3_title:     'Cohort 3 registration is now closed. Thank you!',
+    news_cohort3_desc_full: 'Applications for both students and mentors are now closed. Thank you to everyone who applied. We were glad to see so much interest in advancing medical AI research. Stay tuned for updates on the next cohort.',
+    news_cohort3_desc_short: 'Applications for both students and mentors are now closed. Thank you to everyone who applied. Stay tuned for the next cohort.',
 
     news_sponsor_date:      'Jun 2026',
     news_sponsor_title:     'Sponsorship opportunities are now open',
@@ -178,6 +191,8 @@ const translations = {
     mentors_heading:   'Our <span class="accent-red">Mentors</span>',
     cohort_1_tab:      'Cohort 1',
     cohort_2_tab:      'Cohort 2',
+    cohort_3_tab:      'Cohort 3',
+    coming_soon:       'Coming soon',
 
     // ── students.html ────────────────────────────────────────
     students_heading:  'Our <span class="accent-red">Students</span>',
@@ -191,6 +206,10 @@ const translations = {
     board_role_chairman:      'Chairman of the Board',
     board_role_vice_chairman: 'Vice Chairman of the Board',
     board_role_member:        'Board Member',
+    board_aff_aljouie:        'Principal, AI Programs',
+    board_aff_baharoon:       'PhD Student, AI in Medicine, Harvard Medical School',
+    board_aff_alazmi:         'Associate Professor, University of Hail',
+    board_aff_aldeeri:        "Staff Scientist, Boston Children's Hospital",
 
     // ── Lang switcher label ──────────────────────────────────
     lang_toggle_label: 'AR',
@@ -247,6 +266,19 @@ const translations = {
     community_heading:   'المجتمع <span class="accent-red">الطلابي السعودي</span>',
     community_desc:     'استكشف مناطق المملكة وتعرّف على مشاركة الطلاب في كل منطقة',  
 
+    community_kicker: 'على مستوى المملكة',
+    community_unit: 'طالب وطالبة',
+    community_unit_one: 'طالب وطالبة',
+    community_regions_note: 'في {active} من {total} منطقة',
+    community_share_note: '{pct}% من إجمالي طلاب سميل',
+    community_zero_note: 'لا يوجد طلاب من هذه المنطقة بعد.',
+    community_list_label: 'الطلاب حسب المنطقة',
+    community_legend_label: 'الطلاب في كل منطقة',
+    community_map_label: 'خريطة المملكة العربية السعودية مظللة بحسب عدد طلاب سميل في كل منطقة',
+    legend_none: 'لا طلاب بعد',
+    legend_low: 'من 1 إلى 4',
+    legend_medium: 'من 5 إلى 9',
+    legend_high: '10 فأكثر',
     tooltip_students: "الطلاب",
     tooltip_percentage: "نسبة المشاركة",
 
@@ -341,9 +373,9 @@ const translations = {
     news_cohort3_date:      'سبتمبر 2026',
     news_cohort3_dateline_month: 'سبتمبر',
     news_cohort3_dateline_year:  '2026',
-    news_cohort3_title:     'التسجيل في الدفعة الثالثة مغلق الآن — شكرًا لكم!',
-    news_cohort3_desc_full: 'أُغلق التسجيل الآن لكل من الطلاب والمرشدين. شكرًا لكل من تقدّم بطلب — سعدنا برؤية هذا الاهتمام الكبير بدفع أبحاث الذكاء الاصطناعي الطبي إلى الأمام. تابعونا لمعرفة تفاصيل الدفعة القادمة.',
-    news_cohort3_desc_short: 'أُغلق التسجيل الآن لكل من الطلاب والمرشدين. شكرًا لكل من تقدّم بطلب — تابعونا لمعرفة تفاصيل الدفعة القادمة.',
+    news_cohort3_title:     'التسجيل في الدفعة الثالثة مغلق الآن. شكرًا لكم!',
+    news_cohort3_desc_full: 'أُغلق التسجيل الآن لكل من الطلاب والمرشدين. شكرًا لكل من تقدّم بطلب. سعدنا برؤية هذا الاهتمام الكبير بدفع أبحاث الذكاء الاصطناعي الطبي إلى الأمام. تابعونا لمعرفة تفاصيل الدفعة القادمة.',
+    news_cohort3_desc_short: 'أُغلق التسجيل الآن لكل من الطلاب والمرشدين. شكرًا لكل من تقدّم بطلب. تابعونا لمعرفة تفاصيل الدفعة القادمة.',
 
     news_sponsor_date:      'يونيو 2026',
     news_sponsor_title:     'فرص الرعاية لبرنامجنا متاحة الآن',
@@ -367,6 +399,8 @@ const translations = {
     mentors_heading:   'مرشدونا <span class="accent-red">المتميزون</span>',
     cohort_1_tab:      'الدفعة الأولى',
     cohort_2_tab:      'الدفعة الثانية',
+    cohort_3_tab:      'الدفعة الثالثة',
+    coming_soon:       'قريبًا',
 
     // ── students.html ────────────────────────────────────────
     students_heading:  'طلابنا <span class="accent-red">المتميزون</span>',
@@ -380,6 +414,10 @@ const translations = {
     board_role_chairman:      'رئيس مجلس الإدارة',
     board_role_vice_chairman: 'نائب رئيس مجلس الإدارة',
     board_role_member:        'عضو مجلس الإدارة',
+    board_aff_aljouie:        'مدير رئيسي، برامج الذكاء الاصطناعي',
+    board_aff_baharoon:       'طالب دكتوراه، الذكاء الاصطناعي في الطب، كلية الطب بجامعة هارفارد',
+    board_aff_alazmi:         'أستاذ مشارك، جامعة حائل',
+    board_aff_aldeeri:        'عالم متفرغ، مستشفى بوسطن للأطفال',
 
     // ── Lang switcher label ──────────────────────────────────
     lang_toggle_label: 'EN',
@@ -409,6 +447,7 @@ function applyLanguage(lang) {
 
   // Persist
   localStorage.setItem('smail_lang', lang);
+  document.dispatchEvent(new CustomEvent('smail:langchange', { detail: { lang } }));
 }
 
 // ── Toggle helper ────────────────────────────────────────────
