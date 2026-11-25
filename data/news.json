@@ -1,0 +1,127 @@
+[
+  {
+    "id": "cohort3-closed",
+    "published": true,
+    "featured": true,
+    "order": 0,
+    "date": "2026-09",
+    "tag": "program",
+    "link": "/#application",
+    "external": false,
+    "title": {
+      "en": "Cohort 3 registration is now closed. Thank you!",
+      "ar": "التسجيل في الدفعة الثالثة مغلق الآن. شكرًا لكم!"
+    },
+    "summary": {
+      "en": "Applications for both students and mentors are now closed. Thank you to everyone who applied. Stay tuned for the next cohort.",
+      "ar": "أُغلق التسجيل الآن لكل من الطلاب والمرشدين. شكرًا لكل من تقدّم بطلب. تابعونا لمعرفة تفاصيل الدفعة القادمة."
+    },
+    "body": {
+      "en": "Applications for both students and mentors are now closed. Thank you to everyone who applied. We were glad to see so much interest in advancing medical AI research. Stay tuned for updates on the next cohort.",
+      "ar": "أُغلق التسجيل الآن لكل من الطلاب والمرشدين. شكرًا لكل من تقدّم بطلب. سعدنا برؤية هذا الاهتمام الكبير بدفع أبحاث الذكاء الاصطناعي الطبي إلى الأمام. تابعونا لمعرفة تفاصيل الدفعة القادمة."
+    }
+  },
+  {
+    "id": "leap-2026",
+    "published": true,
+    "featured": false,
+    "order": 1,
+    "date": "2026-08",
+    "tag": "event",
+    "link": "https://onegiantleap.com/",
+    "external": true,
+    "logo": "images/partners/leap-2026-logo.svg",
+    "title": {
+      "en": "SMAIL is heading to LEAP 2026",
+      "ar": "سمايل متوجهة إلى LEAP 2026"
+    },
+    "summary": {
+      "en": "Find us in Riyadh, 31 August – 3 September 2026.",
+      "ar": "تواصلوا معنا في الرياض، من 31 أغسطس إلى 3 سبتمبر 2026."
+    },
+    "body": {
+      "en": "Find us in Riyadh as we connect with the region's tech community. 31 August – 3 September 2026, RECC Malham, Saudi Arabia.",
+      "ar": "تواصلوا معنا في الرياض ضمن مجتمع التقنية الإقليمي، من 31 أغسطس إلى 3 سبتمبر 2026، في مركز الرياض الدولي للمعارض والمؤتمرات (RECC)، المملكة العربية السعودية."
+    }
+  },
+  {
+    "id": "sponsorship-open",
+    "published": true,
+    "featured": false,
+    "order": 2,
+    "date": "2026-06",
+    "tag": "program",
+    "link": "/#sponsorship",
+    "external": false,
+    "title": {
+      "en": "Sponsorship opportunities are now open",
+      "ar": "فرص الرعاية لبرنامجنا متاحة الآن"
+    },
+    "summary": {
+      "en": "Organizations can now sponsor the next cohort of Saudi student researchers.",
+      "ar": "يمكن للمؤسسات الآن رعاية الدفعة القادمة من الباحثين السعوديين."
+    },
+    "body": {
+      "en": "We're inviting organizations to sponsor the next cohort of Saudi student researchers and help scale the program.",
+      "ar": "ندعو المؤسسات لرعاية الدفعة القادمة من الباحثين السعوديين والمساهمة في توسيع نطاق البرنامج."
+    }
+  },
+  {
+    "id": "biocreative-ix",
+    "published": true,
+    "featured": false,
+    "order": 3,
+    "date": "2025-08",
+    "tag": "publication",
+    "link": "papers.html",
+    "external": false,
+    "title": {
+      "en": "SMAIL research heads to BioCreative IX",
+      "ar": "أبحاث سمايل تصل إلى مؤتمر BioCreative IX"
+    },
+    "summary": {
+      "en": "A paper co-authored by a SMAIL student and mentor was accepted at IJCAI 2025 in Montreal, Canada.",
+      "ar": "ورقة بحثية شارك في تأليفها طالب ومرشد من سمايل تم قبولها في IJCAI 2025 بمونتريال، كندا."
+    },
+    "body": {
+      "en": "A paper co-authored by a SMAIL student and mentor was accepted at the BioCreative IX Challenge and Workshop, part of IJCAI 2025, 16–22 August 2025 in Montreal, Canada.",
+      "ar": "ورقة بحثية شارك في تأليفها طالب ومرشد من سمايل تم قبولها في تحدي وورشة عمل BioCreative IX، ضمن فعاليات IJCAI 2025، من 16 إلى 22 أغسطس 2025 في مونتريال، كندا."
+    }
+  },
+  {
+    "id": "website-in-arabic",
+    "published": true,
+    "featured": false,
+    "order": 4,
+    "date": "2026-06",
+    "tag": "community",
+    "link": "/",
+    "external": false,
+    "title": {
+      "en": "The SMAIL website is now available in Arabic",
+      "ar": "موقع سمايل الإلكتروني متاح الآن باللغة العربية"
+    },
+    "summary": {
+      "en": "Use the AR toggle in the navigation bar to read the whole site, including the program and application details, in Arabic.",
+      "ar": "استخدم زر التبديل AR في شريط التنقل لقراءة الموقع بالكامل باللغة العربية، بما في ذلك تفاصيل البرنامج والتقديم."
+    }
+  },
+  {
+    "id": "growth-2026",
+    "published": true,
+    "featured": false,
+    "order": 5,
+    "date": "2026",
+    "tag": "community",
+    "link": "students.html",
+    "external": false,
+    "title": {
+      "en": "20+ mentors, 31+ students, and growing",
+      "ar": "أكثر من 20 مرشدًا و31 طالبًا، والعدد في تزايد"
+    },
+    "summary": {
+      "en": "Across two completed cohorts, SMAIL has paired Saudi university students with mentors from institutions including Stanford, Oxford, and CMU.",
+      "ar": "عبر دفعتين مكتملتين، جمعت سمايل بين طلاب الجامعات السعودية ومرشدين من مؤسسات عالمية منها ستانفورد وأكسفورد و CMU."
+    }
+  }
+]

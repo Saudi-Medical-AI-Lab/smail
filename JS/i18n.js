@@ -8,8 +8,6 @@
 const translations = {
   en: {
     // ── Navbar ──────────────────────────────────────────────
-    announcement_sponsorship: 'Sponsorship opportunities are now open for our program! <a href="#sponsorship" style="color: #920e0e; text-decoration: underline;">Learn more →</a>',
-    know_more: 'Learn more →',
     nav_home:         'Home',
     nav_about:        'About',
     nav_program:      'Program',
@@ -150,42 +148,9 @@ const translations = {
     news_tag_publication: 'Publication',
     news_tag_community:   'Community',
     news_tag_event:       'Event',
-    news_leap_cta: 'Explore LEAP 2026 →',
     news_teaser_heading: 'Latest from <span class="accent-red">SMAIL</span>',
     news_teaser_desc:    'A quick look at what\'s new with the program.',
     news_view_all:       'View all news →',
-
-    news_leap_dateline_month: 'AUG',
-    news_leap_dateline_year:  '2026',
-    news_leap_date:      'Aug 2026',
-    news_leap_title:     'SMAIL is heading to LEAP 2026',
-    news_leap_desc_full: 'Find us in Riyadh as we connect with the region\'s tech community. 31 August – 3 September 2026, RECC Malham, Saudi Arabia.',
-    news_leap_desc_short: 'Find us in Riyadh, 31 August – 3 September 2026.',
-
-    news_cohort3_date:      'Sep 2026',
-    news_cohort3_dateline_month: 'SEP',
-    news_cohort3_dateline_year:  '2026',
-    news_cohort3_title:     'Cohort 3 registration is now closed. Thank you!',
-    news_cohort3_desc_full: 'Applications for both students and mentors are now closed. Thank you to everyone who applied. We were glad to see so much interest in advancing medical AI research. Stay tuned for updates on the next cohort.',
-    news_cohort3_desc_short: 'Applications for both students and mentors are now closed. Thank you to everyone who applied. Stay tuned for the next cohort.',
-
-    news_sponsor_date:      'Jun 2026',
-    news_sponsor_title:     'Sponsorship opportunities are now open',
-    news_sponsor_desc_full: 'We\'re inviting organizations to sponsor the next cohort of Saudi student researchers and help scale the program.',
-    news_sponsor_desc_short: 'Organizations can now sponsor the next cohort of Saudi student researchers.',
-
-    news_biocreative_date:      'Aug 2025',
-    news_biocreative_title:     'SMAIL research heads to BioCreative IX',
-    news_biocreative_desc_full: 'A paper co-authored by a SMAIL student and mentor was accepted at the BioCreative IX Challenge and Workshop, part of IJCAI 2025, 16–22 August 2025 in Montreal, Canada.',
-    news_biocreative_desc_short: 'A paper co-authored by a SMAIL student and mentor was accepted at IJCAI 2025 in Montreal, Canada.',
-
-    news_arabic_date:  'Jun 2026',
-    news_arabic_title: 'The SMAIL website is now available in Arabic',
-    news_arabic_desc:  'Use the AR toggle in the navigation bar to read the whole site, including the program and application details, in Arabic.',
-
-    news_growth_date:  '2026',
-    news_growth_title: '20+ mentors, 31+ students, and growing',
-    news_growth_desc:  'Across two completed cohorts, SMAIL has paired Saudi university students with mentors from institutions including Stanford, Oxford, and CMU.',
 
     // ── mentors.html ─────────────────────────────────────────
     mentors_heading:   'Our <span class="accent-red">Mentors</span>',
@@ -193,6 +158,8 @@ const translations = {
     cohort_2_tab:      'Cohort 2',
     cohort_3_tab:      'Cohort 3',
     coming_soon:       'Coming soon',
+    person_mentor_label: 'Mentor:',
+    content_error:     'Unable to load this list right now. Please try again later.',
 
     // ── students.html ────────────────────────────────────────
     students_heading:  'Our <span class="accent-red">Students</span>',
@@ -217,7 +184,6 @@ const translations = {
 
   ar: {
     // ── Navbar ──────────────────────────────────────────────
-    announcement_sponsorship: 'فرص الرعاية لبرنامجنا متاحة الآن ! <a href="#sponsorship" data-i18n="know_more" style="color: #920e0e; text-decoration: underline;">اعرف المزيد ←</a>',
     nav_home:         'الرئيسية',
     nav_about:        'من نحن',
     nav_program:      'البرنامج',
@@ -358,42 +324,9 @@ const translations = {
     news_tag_publication: 'منشور بحثي',
     news_tag_community:   'المجتمع',
     news_tag_event:       'فعالية',
-    news_leap_cta: 'اكتشف LEAP 2026 ←',
     news_teaser_heading: 'آخر مستجدات <span class="accent-red">سمايل</span>',
     news_teaser_desc:    'نظرة سريعة على أحدث ما يجري في البرنامج.',
     news_view_all:       'عرض جميع الأخبار ←',
-
-    news_leap_dateline_month: 'أغسطس',
-    news_leap_dateline_year:  '2026',
-    news_leap_date:      'أغسطس 2026',
-    news_leap_title:     'سمايل متوجهة إلى LEAP 2026',
-    news_leap_desc_full: 'تواصلوا معنا في الرياض ضمن مجتمع التقنية الإقليمي، من 31 أغسطس إلى 3 سبتمبر 2026، في مركز الرياض الدولي للمعارض والمؤتمرات (RECC)، المملكة العربية السعودية.',
-    news_leap_desc_short: 'تواصلوا معنا في الرياض، من 31 أغسطس إلى 3 سبتمبر 2026.',
-
-    news_cohort3_date:      'سبتمبر 2026',
-    news_cohort3_dateline_month: 'سبتمبر',
-    news_cohort3_dateline_year:  '2026',
-    news_cohort3_title:     'التسجيل في الدفعة الثالثة مغلق الآن. شكرًا لكم!',
-    news_cohort3_desc_full: 'أُغلق التسجيل الآن لكل من الطلاب والمرشدين. شكرًا لكل من تقدّم بطلب. سعدنا برؤية هذا الاهتمام الكبير بدفع أبحاث الذكاء الاصطناعي الطبي إلى الأمام. تابعونا لمعرفة تفاصيل الدفعة القادمة.',
-    news_cohort3_desc_short: 'أُغلق التسجيل الآن لكل من الطلاب والمرشدين. شكرًا لكل من تقدّم بطلب. تابعونا لمعرفة تفاصيل الدفعة القادمة.',
-
-    news_sponsor_date:      'يونيو 2026',
-    news_sponsor_title:     'فرص الرعاية لبرنامجنا متاحة الآن',
-    news_sponsor_desc_full: 'ندعو المؤسسات لرعاية الدفعة القادمة من الباحثين السعوديين والمساهمة في توسيع نطاق البرنامج.',
-    news_sponsor_desc_short: 'يمكن للمؤسسات الآن رعاية الدفعة القادمة من الباحثين السعوديين.',
-
-    news_biocreative_date:      'أغسطس 2025',
-    news_biocreative_title:     'أبحاث سمايل تصل إلى مؤتمر BioCreative IX',
-    news_biocreative_desc_full: 'ورقة بحثية شارك في تأليفها طالب ومرشد من سمايل تم قبولها في تحدي وورشة عمل BioCreative IX، ضمن فعاليات IJCAI 2025، من 16 إلى 22 أغسطس 2025 في مونتريال، كندا.',
-    news_biocreative_desc_short: 'ورقة بحثية شارك في تأليفها طالب ومرشد من سمايل تم قبولها في IJCAI 2025 بمونتريال، كندا.',
-
-    news_arabic_date:  'يونيو 2026',
-    news_arabic_title: 'موقع سمايل الإلكتروني متاح الآن باللغة العربية',
-    news_arabic_desc:  'استخدم زر التبديل AR في شريط التنقل لقراءة الموقع بالكامل باللغة العربية، بما في ذلك تفاصيل البرنامج والتقديم.',
-
-    news_growth_date:  '2026',
-    news_growth_title: 'أكثر من 20 مرشدًا و31 طالبًا، والعدد في تزايد',
-    news_growth_desc:  'عبر دفعتين مكتملتين، جمعت سمايل بين طلاب الجامعات السعودية ومرشدين من مؤسسات عالمية منها ستانفورد وأكسفورد و CMU.',
 
     // ── mentors.html ─────────────────────────────────────────
     mentors_heading:   'مرشدونا <span class="accent-red">المتميزون</span>',
@@ -401,6 +334,8 @@ const translations = {
     cohort_2_tab:      'الدفعة الثانية',
     cohort_3_tab:      'الدفعة الثالثة',
     coming_soon:       'قريبًا',
+    person_mentor_label: 'المرشد:',
+    content_error:     'تعذّر تحميل هذه القائمة حاليًا. يُرجى المحاولة لاحقًا.',
 
     // ── students.html ────────────────────────────────────────
     students_heading:  'طلابنا <span class="accent-red">المتميزون</span>',

@@ -1,0 +1,911 @@
+[
+  {
+    "id": "abdulrhman-aljouie-c1",
+    "group": "mentor",
+    "cohort": 1,
+    "order": 0,
+    "published": true,
+    "name": "Abdulrhman Aljouie",
+    "image": "images/mentors/ProfAbdullrahman.png",
+    "title": {
+      "en": "Associate Research Scientist, Assistant Professor"
+    },
+    "affiliation": {
+      "en": "KAIMRC, KSAU-HS"
+    },
+    "link": "https://scholar.google.com/citations?user=w8nyAIAAAAAJ&hl=en"
+  },
+  {
+    "id": "yahya-bokhari-c1",
+    "group": "mentor",
+    "cohort": 1,
+    "order": 1,
+    "published": true,
+    "name": "Yahya Bokhari",
+    "image": "images/mentors/Yahya_Bokhari.png",
+    "title": {
+      "en": "Associate Research Scientist, Assistant Professor"
+    },
+    "affiliation": {
+      "en": "KAIMRC, KSAU-HS"
+    },
+    "link": "https://scholar.google.com/citations?user=0XIpOtgAAAAJ&hl=en"
+  },
+  {
+    "id": "somayah-albaradei-c1",
+    "group": "mentor",
+    "cohort": 1,
+    "order": 2,
+    "published": true,
+    "name": "Somayah Albaradei",
+    "image": "images/Female-icon.png",
+    "title": {
+      "en": "Assistant Professor"
+    },
+    "affiliation": {
+      "en": "KAU"
+    },
+    "link": "https://scholar.google.com/citations?user=kILVlS0AAAAJ&hl=en"
+  },
+  {
+    "id": "maytha-alshammari-c1",
+    "group": "mentor",
+    "cohort": 1,
+    "order": 3,
+    "published": true,
+    "name": "Maytha Alshammari",
+    "image": "images/Female-icon.png",
+    "title": {
+      "en": "Ph.D. Student"
+    },
+    "affiliation": {
+      "en": "Old Dominion University"
+    },
+    "link": "https://scholar.google.com/citations?user=vVVqSjMAAAAJ&hl=en&oi=ao"
+  },
+  {
+    "id": "othman-soufan-c1",
+    "group": "mentor",
+    "cohort": 1,
+    "order": 4,
+    "published": true,
+    "name": "Othman Soufan",
+    "image": "images/mentors/Othman_Soufan.png",
+    "title": {
+      "en": "Assistant Professor"
+    },
+    "affiliation": {
+      "en": "University of Prince Mugrin"
+    },
+    "link": "https://scholar.google.com/citations?user=9m0mYYEAAAAJ&hl=en"
+  },
+  {
+    "id": "dr-meshari-alazmi-c1",
+    "group": "mentor",
+    "cohort": 1,
+    "order": 5,
+    "published": true,
+    "name": "Dr. Meshari Alazmi",
+    "image": "images/mentors/Meshari Alazmi.png",
+    "title": {
+      "en": "Associate Professor"
+    },
+    "affiliation": {
+      "en": "University of Hail"
+    },
+    "link": "https://www.linkedin.com/in/meshari-alazmi-78a5a945/"
+  },
+  {
+    "id": "mohammed-alliheedi-c1",
+    "group": "mentor",
+    "cohort": 1,
+    "order": 6,
+    "published": true,
+    "name": "Mohammed Alliheedi",
+    "image": "images/mentors/Mohammed_Alliheedi.png",
+    "title": {
+      "en": "Assistant Professor"
+    },
+    "affiliation": {
+      "en": "Al-Baha University"
+    },
+    "link": "https://scholar.google.ca/citations?user=Wcoweq8AAAAJ&hl=en"
+  },
+  {
+    "id": "abdulaziz-al-helali-c1",
+    "group": "mentor",
+    "cohort": 1,
+    "order": 7,
+    "published": true,
+    "name": "AbdulAziz Al-Helali",
+    "image": "images/male-icon.png",
+    "title": {
+      "en": "Assistant Professor"
+    },
+    "affiliation": {
+      "en": "Prince Sultan University"
+    },
+    "link": "https://scholar.google.com/citations?user=leeAfvQAAAAJ&hl=en"
+  },
+  {
+    "id": "wei-peng-c1",
+    "group": "mentor",
+    "cohort": 1,
+    "order": 8,
+    "published": true,
+    "name": "Wei Peng",
+    "image": "images/mentors/Wei_Peng.png",
+    "title": {
+      "en": "Research Scientist"
+    },
+    "affiliation": {
+      "en": "Stanford University"
+    },
+    "link": "https://scholar.google.com/citations?user=TDFM0QYAAAAJ&hl=en"
+  },
+  {
+    "id": "abdullah-saeed-abdullah-c2",
+    "group": "mentor",
+    "cohort": 2,
+    "order": 9,
+    "published": true,
+    "name": "Abdullah Saeed Abdullah",
+    "image": "images/male-icon.png",
+    "title": {
+      "en": "Director of Research Unit"
+    },
+    "affiliation": {
+      "en": "Aseer Health Cluster, Ministry of Health"
+    },
+    "link": "mailto:abdallah.bds1@gmail.com"
+  },
+  {
+    "id": "sultan-alshehri-c2",
+    "group": "mentor",
+    "cohort": 2,
+    "order": 10,
+    "published": true,
+    "name": "Sultan Alshehri",
+    "image": "images/mentors/sultan.jpeg",
+    "title": {
+      "en": "PhD Student"
+    },
+    "affiliation": {
+      "en": "Carnegie Mellon University"
+    },
+    "link": "mailto:sultanmg.alshehri@gmail.com"
+  },
+  {
+    "id": "dr-ahmad-turki-c2",
+    "group": "mentor",
+    "cohort": 2,
+    "order": 11,
+    "published": true,
+    "name": "Dr. Ahmad Turki",
+    "image": "images/mentors/ahmed_fawzi_turki.jpeg",
+    "title": {
+      "en": "Assistant Professor"
+    },
+    "affiliation": {
+      "en": "King Abdulaziz University"
+    },
+    "link": "mailto:aforke@kau.edu.sa"
+  },
+  {
+    "id": "fahd-albinali-c2",
+    "group": "mentor",
+    "cohort": 2,
+    "order": 12,
+    "published": true,
+    "name": "Fahd AlbinAli",
+    "image": "images/mentors/fahd_abinali.jpeg",
+    "title": {
+      "en": "Professor, CTO and President respectively"
+    },
+    "affiliation": {
+      "en": "California State University and QMedicHealth Inc, IQRA Network Inc"
+    },
+    "link": "mailto:falbinial@qmedichealth.com"
+  },
+  {
+    "id": "saima-jabeen-c2",
+    "group": "mentor",
+    "cohort": 2,
+    "order": 13,
+    "published": true,
+    "name": "Saima Jabeen",
+    "image": "images/Female-icon.png",
+    "title": {
+      "en": "Research Fellow"
+    },
+    "affiliation": {
+      "en": "Alfaisal University, Riyadh, Saudi Arabia"
+    },
+    "link": "mailto:uop.saima@gmail.com"
+  },
+  {
+    "id": "vaibhav-c-gandhi-c2",
+    "group": "mentor",
+    "cohort": 2,
+    "order": 14,
+    "published": true,
+    "name": "Vaibhav C. Gandhi",
+    "image": "images/mentors/Vaibhav Gandhi.jpg",
+    "title": {
+      "en": "Assistant Professor"
+    },
+    "affiliation": {
+      "en": "MBIT, The Charutar Vidya Mandal (CVM) University, Gujarat, India"
+    },
+    "link": "mailto:vaibhavgandhi2424@gmail.com"
+  },
+  {
+    "id": "saleh-ibrahim-alzahrani-c2",
+    "group": "mentor",
+    "cohort": 2,
+    "order": 15,
+    "published": true,
+    "name": "Saleh Ibrahim Alzahrani",
+    "image": "images/mentors/saleh.jpeg",
+    "title": {
+      "en": "Head of Department & Assistant Professor of Biomedical Engineering"
+    },
+    "affiliation": {
+      "en": "Imam Abdulrahman Bin Faisal University"
+    },
+    "link": "mailto:sialzahrani@iau.edu.sa"
+  },
+  {
+    "id": "mohammed-al-sarem-c2",
+    "group": "mentor",
+    "cohort": 2,
+    "order": 16,
+    "published": true,
+    "name": "Mohammed Al-Sarem",
+    "image": "images/mentors/al-sarem.jpeg",
+    "title": {
+      "en": "Professor"
+    },
+    "affiliation": {
+      "en": "Taibah University"
+    },
+    "link": "mailto:msarem@taibahu.edu.sa"
+  },
+  {
+    "id": "zaki-brahmi-c2",
+    "group": "mentor",
+    "cohort": 2,
+    "order": 17,
+    "published": true,
+    "name": "Zaki Brahmi",
+    "image": "images/mentors/zaki.png",
+    "title": {
+      "en": "Assistant Professor"
+    },
+    "affiliation": {
+      "en": "Sousse University"
+    },
+    "link": "mailto:zakibrahmi@gmail.com"
+  },
+  {
+    "id": "atheer-alsayah-c2",
+    "group": "mentor",
+    "cohort": 2,
+    "order": 18,
+    "published": true,
+    "name": "Atheer Alsayah",
+    "image": "images/Female-icon.png",
+    "title": {
+      "en": "PhD student, Academic Researcher"
+    },
+    "affiliation": {
+      "en": "Oxford University, KACST"
+    },
+    "link": "mailto:atheer.als.ais@gmail.com"
+  },
+  {
+    "id": "haifa-f-alhasson-c2",
+    "group": "mentor",
+    "cohort": 2,
+    "order": 19,
+    "published": true,
+    "name": "Haifa F. Alhasson",
+    "image": "images/Female-icon.png",
+    "title": {
+      "en": "Assistant Professor"
+    },
+    "affiliation": {
+      "en": "Qassim University"
+    }
+  },
+  {
+    "id": "sulafah-khaled-noruldeen-c1",
+    "group": "student",
+    "cohort": 1,
+    "order": 0,
+    "published": true,
+    "name": "Sulafah Khaled Noruldeen",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "KFUPM"
+    },
+    "mentor": "Othman Soufan",
+    "region": null
+  },
+  {
+    "id": "ehab-alqumboz-c1",
+    "group": "student",
+    "cohort": 1,
+    "order": 1,
+    "published": true,
+    "name": "Ehab Alqumboz",
+    "image": "images/male-icon.png",
+    "affiliation": {
+      "en": "University of Jeddah"
+    },
+    "mentor": "Yahya Bokhari",
+    "region": null
+  },
+  {
+    "id": "ola-alyazidi-c1",
+    "group": "student",
+    "cohort": 1,
+    "order": 2,
+    "published": true,
+    "name": "Ola Alyazidi",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "Umm Al-Qura University"
+    },
+    "mentor": "Somayah Albaradei",
+    "region": null
+  },
+  {
+    "id": "shahad-jeza-alamri-c1",
+    "group": "student",
+    "cohort": 1,
+    "order": 3,
+    "published": true,
+    "name": "Shahad Jeza Alamri",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "Taibah University"
+    },
+    "mentor": "Meshari Alazmi",
+    "region": null
+  },
+  {
+    "id": "ahmed-omar-bajaber-c1",
+    "group": "student",
+    "cohort": 1,
+    "order": 4,
+    "published": true,
+    "name": "Ahmed Omar Bajaber",
+    "image": "images/male-icon.png",
+    "affiliation": {
+      "en": "Prince Sultan University"
+    },
+    "mentor": "Mohammed Alliheedi",
+    "region": null
+  },
+  {
+    "id": "omar-osama-rawas-c1",
+    "group": "student",
+    "cohort": 1,
+    "order": 5,
+    "published": true,
+    "name": "Omar Osama Rawas",
+    "image": "images/male-icon.png",
+    "affiliation": {
+      "en": "King Abdulaziz University"
+    },
+    "mentor": "Abdulrhman Aljouie",
+    "region": null
+  },
+  {
+    "id": "yahya-alhabboub-c1",
+    "group": "student",
+    "cohort": 1,
+    "order": 6,
+    "published": true,
+    "name": "Yahya Alhabboub",
+    "image": "images/male-icon.png",
+    "affiliation": {
+      "en": "Imam Abdulrahman Bin Faisal University"
+    },
+    "mentor": "Yahya Bokhari",
+    "region": null
+  },
+  {
+    "id": "hanin-eidhah-bin-bishar-c1",
+    "group": "student",
+    "cohort": 1,
+    "order": 7,
+    "published": true,
+    "name": "Hanin Eidhah Bin Bishar",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "Tabuk University"
+    },
+    "mentor": "Meshari Alazmi",
+    "region": null
+  },
+  {
+    "id": "shahad-mohammad-bakhsh-c1",
+    "group": "student",
+    "cohort": 1,
+    "order": 8,
+    "published": true,
+    "name": "Shahad Mohammad Bakhsh",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "King Saud University"
+    },
+    "mentor": "Maytha Alshammari",
+    "region": null
+  },
+  {
+    "id": "abdulrahman-alhomayany-c1",
+    "group": "student",
+    "cohort": 1,
+    "order": 9,
+    "published": true,
+    "name": "Abdulrahman Alhomayany",
+    "image": "images/male-icon.png",
+    "affiliation": {
+      "en": "Saudi Electronic University"
+    },
+    "mentor": "Abdulrhman Aljouie",
+    "region": null
+  },
+  {
+    "id": "mohammed-almudhry-c1",
+    "group": "student",
+    "cohort": 1,
+    "order": 10,
+    "published": true,
+    "name": "Mohammed Almudhry",
+    "image": "images/male-icon.png",
+    "affiliation": {
+      "en": "KFUPM"
+    },
+    "mentor": "AbdulAziz Al-Helali",
+    "region": null
+  },
+  {
+    "id": "ebtisam-alshehri-c1",
+    "group": "student",
+    "cohort": 1,
+    "order": 11,
+    "published": true,
+    "name": "Ebtisam Alshehri",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "University of Jeddah"
+    },
+    "mentor": "Yahya Bokhari",
+    "region": null
+  },
+  {
+    "id": "anfal-alshehri-c1",
+    "group": "student",
+    "cohort": 1,
+    "order": 12,
+    "published": true,
+    "name": "Anfal Alshehri",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "King Abdulaziz University"
+    },
+    "mentor": "Somayah Albaradei",
+    "region": null
+  },
+  {
+    "id": "ayatun-ara-c2",
+    "group": "student",
+    "cohort": 2,
+    "order": 13,
+    "published": true,
+    "name": "Ayatun Ara",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "King Abdulaziz University"
+    },
+    "mentor": "Sultan Alshehri",
+    "region": null
+  },
+  {
+    "id": "safa-khan-c2",
+    "group": "student",
+    "cohort": 2,
+    "order": 14,
+    "published": true,
+    "name": "Safa Khan",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "King Abdulaziz University"
+    },
+    "mentor": "Haifa F. Alhasson",
+    "region": null
+  },
+  {
+    "id": "raneem-qasim-althaqafi-c2",
+    "group": "student",
+    "cohort": 2,
+    "order": 15,
+    "published": true,
+    "name": "Raneem Qasim Althaqafi",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "Taif University"
+    },
+    "mentor": "Saleh Ibrahim Alzahrani",
+    "region": null
+  },
+  {
+    "id": "hatun-alsafri-c2",
+    "group": "student",
+    "cohort": 2,
+    "order": 16,
+    "published": true,
+    "name": "Hatun Alsafri",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "King Abdulaziz University"
+    },
+    "mentor": "Ahmad Turki",
+    "region": null
+  },
+  {
+    "id": "manar-eyad-ali-c2",
+    "group": "student",
+    "cohort": 2,
+    "order": 17,
+    "published": true,
+    "name": "Manar Eyad Ali",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "University of Jeddah"
+    },
+    "mentor": "Ahmad Turki",
+    "region": null
+  },
+  {
+    "id": "gumana-sabri-alkathiri-c2",
+    "group": "student",
+    "cohort": 2,
+    "order": 18,
+    "published": true,
+    "name": "Gumana Sabri Alkathiri",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "King Abdulaziz University"
+    },
+    "mentor": "Atheer Alsayah",
+    "region": null
+  },
+  {
+    "id": "batool-alhajji-c2",
+    "group": "student",
+    "cohort": 2,
+    "order": 19,
+    "published": true,
+    "name": "Batool Alhajji",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "King Faisal University"
+    },
+    "mentor": "Haifa F. Alhasson",
+    "region": null
+  },
+  {
+    "id": "layan-mohammed-aljohani-c2",
+    "group": "student",
+    "cohort": 2,
+    "order": 20,
+    "published": true,
+    "name": "Layan Mohammed Aljohani",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "University of Jeddah"
+    },
+    "mentor": "Saima Jabeen",
+    "region": null
+  },
+  {
+    "id": "salha-nasser-c2",
+    "group": "student",
+    "cohort": 2,
+    "order": 21,
+    "published": true,
+    "name": "Salha Nasser",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "King Abdulaziz University"
+    },
+    "mentor": "Zaki Brahmi",
+    "region": null
+  },
+  {
+    "id": "taif-mashhour-c2",
+    "group": "student",
+    "cohort": 2,
+    "order": 22,
+    "published": true,
+    "name": "Taif Mashhour",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "Taif University"
+    },
+    "mentor": "Fahd Albinali",
+    "region": null
+  },
+  {
+    "id": "abdulkareem-abdulgadir-abdulkareem-omer-c2",
+    "group": "student",
+    "cohort": 2,
+    "order": 23,
+    "published": true,
+    "name": "Abdulkareem Abdulgadir Abdulkareem Omer",
+    "image": "images/male-icon.png",
+    "affiliation": {
+      "en": "Islamic University of Medina"
+    },
+    "mentor": "Vaibhav Gandhi",
+    "region": null
+  },
+  {
+    "id": "raneem-hassan-alyami-c2",
+    "group": "student",
+    "cohort": 2,
+    "order": 24,
+    "published": true,
+    "name": "Raneem Hassan AlYami",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "Princess Nora bint Abdul Rahman University"
+    },
+    "mentor": "Ahmad Turki",
+    "region": null
+  },
+  {
+    "id": "khadija-anwer-khan-c2",
+    "group": "student",
+    "cohort": 2,
+    "order": 25,
+    "published": true,
+    "name": "Khadija Anwer Khan",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "Dar Al-Hekma College"
+    },
+    "mentor": "Mohammed Al-Sarem",
+    "region": null
+  },
+  {
+    "id": "taif-alharbi-c2",
+    "group": "student",
+    "cohort": 2,
+    "order": 26,
+    "published": true,
+    "name": "Taif Alharbi",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "University of Jeddah"
+    },
+    "mentor": "Saleh Ibrahim Alzahrani",
+    "region": null
+  },
+  {
+    "id": "muna-saleh-dini-c2",
+    "group": "student",
+    "cohort": 2,
+    "order": 27,
+    "published": true,
+    "name": "Muna Saleh Dini",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "University of Jeddah"
+    },
+    "mentor": "Abdullah Saeed Abdullah",
+    "region": null
+  },
+  {
+    "id": "almaan-khan-c2",
+    "group": "student",
+    "cohort": 2,
+    "order": 28,
+    "published": true,
+    "name": "Almaan Khan",
+    "image": "images/male-icon.png",
+    "affiliation": {
+      "en": "KFUPM"
+    },
+    "mentor": "Sultan Alshehri",
+    "region": null
+  },
+  {
+    "id": "dena-haif-alshuwaih-c2",
+    "group": "student",
+    "cohort": 2,
+    "order": 29,
+    "published": true,
+    "name": "Dena Haif Alshuwaih",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "King Saud bin Abdulaziz University for Health Sciences"
+    },
+    "mentor": "Vaibhav Gandhi",
+    "region": null
+  },
+  {
+    "id": "aya-sami-alhabashi-c2",
+    "group": "student",
+    "cohort": 2,
+    "order": 30,
+    "published": true,
+    "name": "Aya Sami Alhabashi",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "Alfaisal University"
+    },
+    "mentor": "Vaibhav Gandhi",
+    "region": null
+  },
+  {
+    "id": "tala-jad",
+    "group": "staff",
+    "cohort": null,
+    "order": 0,
+    "published": true,
+    "name": "Tala Jad",
+    "image": "images/Female-icon.png"
+  },
+  {
+    "id": "mohsin-iqbal",
+    "group": "staff",
+    "cohort": null,
+    "order": 1,
+    "published": true,
+    "name": "Mohsin Iqbal",
+    "image": "images/male-icon.png",
+    "link": "https://www.linkedin.com/in/mohsincsv/"
+  },
+  {
+    "id": "fatima-lajam",
+    "group": "staff",
+    "cohort": null,
+    "order": 2,
+    "published": true,
+    "name": "Fatima Lajam",
+    "image": "images/Female-icon.png"
+  },
+  {
+    "id": "hassan-barmandah",
+    "group": "staff",
+    "cohort": null,
+    "order": 3,
+    "published": true,
+    "name": "Hassan Barmandah",
+    "image": "images/staff/Hassan-Barmandah.jpg",
+    "link": "https://www.linkedin.com/in/hsnhb/"
+  },
+  {
+    "id": "loubna-alaidaros",
+    "group": "staff",
+    "cohort": null,
+    "order": 4,
+    "published": true,
+    "name": "Loubna Alaidaros",
+    "image": "images/Female-icon.png"
+  },
+  {
+    "id": "shahad-alsultan",
+    "group": "staff",
+    "cohort": null,
+    "order": 5,
+    "published": true,
+    "name": "Shahad Alsultan",
+    "image": "images/Female-icon.png"
+  },
+  {
+    "id": "osama-azab",
+    "group": "staff_alumni",
+    "cohort": null,
+    "order": 0,
+    "published": true,
+    "name": "Osama Azab",
+    "image": "images/staff/OsamaAzab.jpeg",
+    "link": "https://www.linkedin.com/in/gosamab/"
+  },
+  {
+    "id": "basmah-almutairi",
+    "group": "staff_alumni",
+    "cohort": null,
+    "order": 1,
+    "published": true,
+    "name": "Basmah AlMutairi",
+    "image": "images/Female-icon.png"
+  },
+  {
+    "id": "anmar-albusaley",
+    "group": "staff_alumni",
+    "cohort": null,
+    "order": 2,
+    "published": true,
+    "name": "Anmar Albusaley",
+    "image": "images/male-icon.png"
+  },
+  {
+    "id": "abdulrhman-aljouie",
+    "group": "board",
+    "cohort": null,
+    "order": 0,
+    "published": true,
+    "name": "Dr. Abdulrhman Aljouie",
+    "image": "images/mentors/ProfAbdullrahman.png",
+    "link": "https://www.linkedin.com/in/aljouie/",
+    "title": {
+      "en": "Chairman of the Board",
+      "ar": "رئيس مجلس الإدارة"
+    },
+    "affiliation": {
+      "en": "Principal, AI Programs",
+      "ar": "مدير رئيسي، برامج الذكاء الاصطناعي"
+    }
+  },
+  {
+    "id": "mohammed-baharoon",
+    "group": "board",
+    "cohort": null,
+    "order": 1,
+    "published": true,
+    "name": "Dr. Mohammed Baharoon",
+    "image": "images/staff/Mohammed-Baharoon.png",
+    "link": "https://www.linkedin.com/in/mohammedbaharoon/",
+    "title": {
+      "en": "Vice Chairman of the Board",
+      "ar": "نائب رئيس مجلس الإدارة"
+    },
+    "affiliation": {
+      "en": "PhD Student, AI in Medicine, Harvard Medical School",
+      "ar": "طالب دكتوراه، الذكاء الاصطناعي في الطب، كلية الطب بجامعة هارفارد"
+    }
+  },
+  {
+    "id": "meshari-alazmi",
+    "group": "board",
+    "cohort": null,
+    "order": 2,
+    "published": true,
+    "name": "Dr. Meshari Alazmi",
+    "image": "images/mentors/Meshari Alazmi.png",
+    "link": "https://www.linkedin.com/in/meshari-alazmi-78a5a945/",
+    "title": {
+      "en": "Board Member",
+      "ar": "عضو مجلس الإدارة"
+    },
+    "affiliation": {
+      "en": "Associate Professor, University of Hail",
+      "ar": "أستاذ مشارك، جامعة حائل"
+    }
+  },
+  {
+    "id": "abdulrahman-aldeeri",
+    "group": "board",
+    "cohort": null,
+    "order": 3,
+    "published": true,
+    "name": "Dr. Abdulrahman Aldeeri",
+    "image": "images/staff/Dr. Abdulrahman Aldeeri .jpeg",
+    "link": "https://www.linkedin.com/in/abdulrahman-aldeeri/",
+    "title": {
+      "en": "Board Member",
+      "ar": "عضو مجلس الإدارة"
+    },
+    "affiliation": {
+      "en": "Staff Scientist, Boston Children's Hospital",
+      "ar": "عالم متفرغ، مستشفى بوسطن للأطفال"
+    }
+  }
+]

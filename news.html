@@ -76,69 +76,10 @@
         <div class="container">
 
           <!-- Featured story -->
-          <a href="/#application" class="news-featured" data-aos="fade-up">
-            <div class="news-featured-date">
-              <span class="news-dateline" data-i18n="news_cohort3_dateline_month">SEP</span>
-              <span class="news-dateline-year" data-i18n="news_cohort3_dateline_year">2026</span>
-            </div>
-            <div class="news-featured-body">
-              <div class="news-featured-top">
-                <span class="news-tag news-tag-program" data-i18n="news_tag_program">Program</span>
-              </div>
-              <h2 data-i18n="news_cohort3_title">Cohort 3 registration is now closed. Thank you!</h2>
-              <p data-i18n="news_cohort3_desc_full">Applications for both students and mentors are now closed. Thank you to everyone who applied. We were glad to see so much interest in advancing medical AI research. Stay tuned for updates on the next cohort.</p>
-            </div>
-          </a>
+          <div data-news="featured"></div>
 
           <!-- Grid of stories -->
-          <div class="news-grid">
-
-            <a href="https://onegiantleap.com/" target="_blank" rel="noopener noreferrer" class="news-card news-card-event" data-aos="fade-up">
-              <div class="news-card-top">
-                <span class="news-tag news-tag-event" data-i18n="news_tag_event">Event</span>
-                <img src="images/partners/leap-2026-logo.svg" alt="LEAP 2026" class="news-partner-logo news-partner-logo-sm" />
-              </div>
-              <h3 data-i18n="news_leap_title">SMAIL is heading to LEAP 2026</h3>
-              <p data-i18n="news_leap_desc_short">Find us in Riyadh, 31 August – 3 September 2026.</p>
-            </a>
-
-            <a href="/#sponsorship" class="news-card" data-aos="fade-up" data-aos-delay="50">
-              <div class="news-card-top">
-                <span class="news-tag news-tag-program" data-i18n="news_tag_program">Program</span>
-                <span class="news-date" data-i18n="news_sponsor_date">Jun 2026</span>
-              </div>
-              <h3 data-i18n="news_sponsor_title">Sponsorship opportunities are now open</h3>
-              <p data-i18n="news_sponsor_desc_full">We're inviting organizations to sponsor the next cohort of Saudi student researchers and help scale the program.</p>
-            </a>
-
-            <a href="papers.html" class="news-card" data-aos="fade-up" data-aos-delay="100">
-              <div class="news-card-top">
-                <span class="news-tag news-tag-publication" data-i18n="news_tag_publication">Publication</span>
-                <span class="news-date" data-i18n="news_biocreative_date">Aug 2025</span>
-              </div>
-              <h3 data-i18n="news_biocreative_title">SMAIL research heads to BioCreative IX</h3>
-              <p data-i18n="news_biocreative_desc_full">A paper co-authored by a SMAIL student and mentor was accepted at the BioCreative IX Challenge and Workshop, part of IJCAI 2025, 16–22 August 2025 in Montreal, Canada.</p>
-            </a>
-
-            <a href="/" class="news-card" data-aos="fade-up" data-aos-delay="150">
-              <div class="news-card-top">
-                <span class="news-tag news-tag-community" data-i18n="news_tag_community">Community</span>
-                <span class="news-date" data-i18n="news_arabic_date">Jun 2026</span>
-              </div>
-              <h3 data-i18n="news_arabic_title">The SMAIL website is now available in Arabic</h3>
-              <p data-i18n="news_arabic_desc">Use the AR toggle in the navigation bar to read the whole site, including the program and application details, in Arabic.</p>
-            </a>
-
-            <a href="students.html" class="news-card" data-aos="fade-up" data-aos-delay="200">
-              <div class="news-card-top">
-                <span class="news-tag news-tag-community" data-i18n="news_tag_community">Community</span>
-                <span class="news-date" data-i18n="news_growth_date">2026</span>
-              </div>
-              <h3 data-i18n="news_growth_title">20+ mentors, 31+ students, and growing</h3>
-              <p data-i18n="news_growth_desc">Across two completed cohorts, SMAIL has paired Saudi university students with mentors from institutions including Stanford, Oxford, and CMU.</p>
-            </a>
-
-          </div>
+          <div class="news-grid" data-news="grid"></div>
         </div>
       </section>
     </main>
@@ -149,6 +90,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./JS/i18n.js"></script>
     <script src="./JS/navbarScript.js"></script>
+    <script src="./JS/content.js"></script>
 
     <script>
       AOS.init();

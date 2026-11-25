@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "label": {
+      "en": "Cohort 1",
+      "ar": "الدفعة الأولى"
+    },
+    "status": "completed",
+    "published": true
+  },
+  {
+    "id": 2,
+    "label": {
+      "en": "Cohort 2",
+      "ar": "الدفعة الثانية"
+    },
+    "status": "completed",
+    "published": true
+  },
+  {
+    "id": 3,
+    "label": {
+      "en": "Cohort 3",
+      "ar": "الدفعة الثالثة"
+    },
+    "status": "coming_soon",
+    "published": true
+  }
+]

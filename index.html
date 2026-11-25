@@ -49,7 +49,7 @@
 <div class="fixed-top" style="z-index: 999;">
 
   <section id="announcementBar" class="announcement-bar text-center py-2 position-relative">
-    <p class="m-0" data-i18n="announcement_sponsorship">Sponsorship opportunities are now open for our program! <a href="#sponsorship" data-i18n="know_more" style="color: #920e0e; text-decoration: underline;">Learn more →</a></p>
+    <p class="m-0" data-banner></p>
     <button type="button" class="close-announcement" aria-label="Close" onclick="closeBar()">&times;</button>
   </section>
 
@@ -133,14 +133,14 @@
         <div class="col-md-4">
           <div class="stat-card" data-aos="zoom-in">
             <i class="bi bi-person-workspace stat-icon"></i>
-            <p class="stat-number">20+</p>
+            <p class="stat-number" data-stat="mentor">20+</p>
             <h4 class="stat-label" data-i18n="stat_mentors">Mentors</h4>
           </div>
         </div>
         <div class="col-md-4">
           <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
             <i class="bi bi-mortarboard stat-icon"></i>
-            <p class="stat-number">31+</p>
+            <p class="stat-number" data-stat="student">31+</p>
             <h4 class="stat-label" data-i18n="stat_students">Students</h4>
           </div>
         </div>
@@ -339,34 +339,7 @@
         <a href="news.html" class="news-teaser-cta" data-i18n="news_view_all">View all news →</a>
       </div>
 
-      <div class="news-teaser-grid">
-        <a href="#application" class="news-card" data-aos="fade-up">
-          <div class="news-card-top">
-            <span class="news-tag news-tag-program" data-i18n="news_tag_program">Program</span>
-            <span class="news-date" data-i18n="news_cohort3_date">Aug 2026</span>
-          </div>
-          <h3 data-i18n="news_cohort3_title">Cohort 3 applications are open</h3>
-          <p data-i18n="news_cohort3_desc_short">Students can apply from August 16 to September 15, and mentors from July 19 to September 15.</p>
-        </a>
-
-        <a href="https://onegiantleap.com/" target="_blank" rel="noopener noreferrer" class="news-card news-card-event" data-aos="fade-up" data-aos-delay="100">
-          <div class="news-card-top">
-            <span class="news-tag news-tag-event" data-i18n="news_tag_event">Event</span>
-            <img src="images/partners/leap-2026-logo.svg" alt="LEAP 2026" class="news-partner-logo news-partner-logo-sm" loading="lazy" decoding="async" />
-          </div>
-          <h3 data-i18n="news_leap_title">SMAIL is heading to LEAP 2026</h3>
-          <p data-i18n="news_leap_desc_short">Find us in Riyadh, 31 August – 3 September 2026.</p>
-        </a>
-
-        <a href="#sponsorship" class="news-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="news-card-top">
-            <span class="news-tag news-tag-program" data-i18n="news_tag_program">Program</span>
-            <span class="news-date" data-i18n="news_sponsor_date">Jun 2026</span>
-          </div>
-          <h3 data-i18n="news_sponsor_title">Sponsorship opportunities are now open</h3>
-          <p data-i18n="news_sponsor_desc_short">Organizations can now sponsor the next cohort of Saudi student researchers.</p>
-        </a>
-      </div>
+      <div class="news-teaser-grid" data-news="teaser"></div>
     </div>
   </section>
 
@@ -552,6 +525,7 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./JS/i18n.js"></script>
   <script src="./JS/navbarScript.js"></script>
+  <script src="./JS/content.js"></script>
 
   <script>
     AOS.init();
