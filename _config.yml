@@ -1,0 +1,5 @@
+# Keeps repository files (README, license, etc.) off the public website.
+exclude:
+  - README.md
+  - LICENSE
+  - NOTICE
