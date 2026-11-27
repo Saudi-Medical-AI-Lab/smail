@@ -907,5 +907,18 @@
       "en": "Staff Scientist, Boston Children's Hospital",
       "ar": "عالم متفرغ، مستشفى بوسطن للأطفال"
     }
+  },
+  {
+    "id": "maha-aldosari-c3",
+    "group": "student",
+    "cohort": 3,
+    "order": 0,
+    "published": true,
+    "name": "Maha Aldosari",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "King Fahd University of Petroleum and Minerals (KFUPM)",
+      "ar": "جامعة الملك فهد للبترول والمعادن"
+    }
   }
 ]
