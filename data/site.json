@@ -10,5 +10,23 @@
       "en": "Learn more →",
       "ar": "اعرف المزيد ←"
     }
+  },
+  "applications": {
+    "student": {
+      "open": false,
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSdm-OE8k8AeeB3IJOtAmpR-MHs945f50QJ9KVlRLaRb0gG52g/viewform",
+      "period": {
+        "en": "From August 16 to September 15, 2026",
+        "ar": "من 16 أغسطس إلى 15 سبتمبر 2026"
+      }
+    },
+    "mentor": {
+      "open": false,
+      "link": "https://forms.gle/AoHXiFxiQFaCqG8C6",
+      "period": {
+        "en": "From July 19 to September 15, 2026",
+        "ar": "من 19 يوليو إلى 15 سبتمبر 2026"
+      }
+    }
   }
 }
