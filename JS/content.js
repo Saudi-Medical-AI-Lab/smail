@@ -86,7 +86,7 @@
       const pane = make('div', 'tab-pane fade' + (on ? ' show active' : ''));
       pane.setAttribute('role', 'tabpanel');
       const members = people.filter(p => p.group === group && p.cohort === c.id).sort(byOrder);
-      if (c.status === 'coming_soon' || !members.length) {
+      if (!members.length) { // a cohort marked coming soon still shows its people once some are added
         pane.appendChild(make('p', 'text-center text-muted h4 py-5', tr('coming_soon')));
       } else {
         pane.appendChild(row(members, group));
