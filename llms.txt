@@ -4,7 +4,7 @@
 
 SMAIL runs cohort-based mentorship: students are paired with mentors from top universities and institutions for hands-on medical AI research, with the goal of producing first-author research papers. The program is officially 6 months, expects roughly 15 hours/week of student commitment, and is currently open only to students enrolled at Saudi universities.
 
-Current program stats: 20+ mentors, 32+ students, cohorts ongoing.
+Current program stats: 20+ mentors, 31+ students, cohorts ongoing.
 
 ## Key pages
 
