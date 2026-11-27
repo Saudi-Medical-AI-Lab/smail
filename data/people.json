@@ -907,5 +907,19 @@
       "en": "Staff Scientist, Boston Children's Hospital",
       "ar": "عالم متفرغ، مستشفى بوسطن للأطفال"
     }
+  },
+  {
+    "id": "sara-ali-c3",
+    "group": "student",
+    "cohort": 3,
+    "order": 0,
+    "published": true,
+    "name": "Sara Ali",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "King Saud University (KSU)",
+      "ar": "جامعة الملك سعود"
+    },
+    "link": "https://www.linkedin.com/in/sara-ali-example"
   }
 ]
