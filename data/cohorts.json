@@ -25,5 +25,14 @@
     },
     "status": "coming_soon",
     "published": true
+  },
+  {
+    "published": true,
+    "id": 4,
+    "label": {
+      "en": "Cohort 4",
+      "ar": "الدفعة الرابعة"
+    },
+    "status": "coming_soon"
   }
 ]
