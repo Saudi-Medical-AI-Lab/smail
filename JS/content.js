@@ -65,7 +65,7 @@
   }
 
   const byOrder = (a, b) => (a.order || 0) - (b.order || 0);
-  let activeCohort = null;
+  let activeCohort = Number(new URLSearchParams(location.search).get('cohort')) || null; // ?cohort=3 opens that tab
 
   function renderCohorts(host, people, cohorts, group) {
     const list = cohorts.filter(c => c.published !== false);
