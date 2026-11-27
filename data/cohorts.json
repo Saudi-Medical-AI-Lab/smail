@@ -21,9 +21,9 @@
     "id": 3,
     "label": {
       "en": "Cohort 3",
-      "ar": "الدفعة الثالثة"
+      "ar": "الدفعة 3"
     },
-    "status": "coming_soon",
+    "status": "open",
     "published": true
   }
 ]
