@@ -80,3 +80,15 @@ if (closeBtn && navbarCollapse) {
     }
   }
 })();
+
+// ── Content first: if the scroll-animation library (AOS) fails to load, never leave sections hidden ──
+window.addEventListener('load', function () {
+  setTimeout(function () {
+    if (window.AOS) return; // library loaded: it handles the animation itself
+    document.querySelectorAll('[data-aos]').forEach(function (el) {
+      if (!el.classList.contains('aos-animate') && getComputedStyle(el).opacity === '0') {
+        el.style.opacity = '1'; el.style.transform = 'none';
+      }
+    });
+  }, 2500);
+});

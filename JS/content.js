@@ -32,18 +32,6 @@
     throw lastError;
   }
 
-  // The scroll animation library (AOS) hides every [data-aos] element until it runs. If it fails to load
-  // (CDN blocked or slow, common on a hard refresh), content must still show. Content first, animation second.
-  function reveal(root) {
-    const items = () => (root || document).querySelectorAll('[data-aos]');
-    if (!window.AOS) { items().forEach(e => e.removeAttribute('data-aos')); return; }
-    setTimeout(() => items().forEach(e => {
-      if (!e.classList.contains('aos-animate') && getComputedStyle(e).opacity === '0') {
-        e.style.opacity = '1'; e.style.transform = 'none';
-      }
-    }), 1500);
-  }
-
   function make(tag, cls, text) {
     const e = document.createElement(tag);
     if (cls) e.className = cls;
@@ -67,8 +55,6 @@
   function card(p, group, i) {
     const wide = group === 'board';
     const col = make('div', (wide ? 'col-md-6' : 'col-md-4') + ' text-center mb-4');
-    col.setAttribute('data-aos', 'fade-up');
-    if (i % 3) col.setAttribute('data-aos-delay', String((i % 3) * 100));
     const img = make('img', (/-icon\.png$/i.test(p.image) ? 'circle-padding ' : '') + 'rounded-circle mentor-img');
     img.src = p.image;
     img.alt = p.name;
@@ -138,8 +124,6 @@
         host.appendChild(row(people.filter(p => p.group === group).sort(byOrder), group));
       }
     });
-    if (window.AOS) (AOS.refreshHard || AOS.refresh)();
-    reveal();
   }
 
   function fail() {
@@ -166,8 +150,6 @@
   }
   function newsCard(n, text, i) {
     const a = newsLink(n, 'news-card' + (n.tag === 'event' ? ' news-card-event' : ''));
-    a.setAttribute('data-aos', 'fade-up');
-    if (i) a.setAttribute('data-aos-delay', String(Math.min(i, 4) * 50));
     const top = make('div', 'news-card-top');
     top.appendChild(make('span', 'news-tag news-tag-' + n.tag, tr('news_tag_' + n.tag)));
     if (n.logo) {
@@ -182,7 +164,6 @@
   }
   function featuredCard(n) {
     const a = newsLink(n, 'news-featured');
-    a.setAttribute('data-aos', 'fade-up');
     const date = make('div', 'news-featured-date');
     const [y, m] = String(n.date).split('-');
     date.append(
@@ -209,8 +190,6 @@
         items.slice(0, 3).forEach((n, i) => host.appendChild(newsCard(n, loc(n.summary) || loc(n.body), i)));
       }
     });
-    if (window.AOS) (AOS.refreshHard || AOS.refresh)();
-    reveal();
   }
   function renderBanner(site) {
     const bar = document.getElementById('announcementBar');
