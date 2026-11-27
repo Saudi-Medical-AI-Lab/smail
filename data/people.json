@@ -907,5 +907,22 @@
       "en": "Staff Scientist, Boston Children's Hospital",
       "ar": "عالم متفرغ، مستشفى بوسطن للأطفال"
     }
+  },
+  {
+    "id": "ziyad-alharbi",
+    "group": "staff",
+    "cohort": null,
+    "order": 6,
+    "published": true,
+    "name": "Ziyad Alharbi",
+    "image": "images/male-icon.png",
+    "title": {
+      "en": "Project Coordinator",
+      "ar": "منسق المشاريع"
+    },
+    "affiliation": {
+      "en": "SMAIL",
+      "ar": "سمايل"
+    }
   }
 ]
