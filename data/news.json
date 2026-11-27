@@ -1,5 +1,23 @@
 [
   {
+    "id": "smail-workshop-at-leap",
+    "published": true,
+    "featured": false,
+    "order": -1,
+    "date": "2027-03",
+    "tag": "event",
+    "link": "https://smail.org.sa/news.html",
+    "external": false,
+    "title": {
+      "en": "SMAIL workshop at LEAP",
+      "ar": "ورشة عمل SMAIL في ليب"
+    },
+    "summary": {
+      "en": "SMAIL is holding a workshop at LEAP.",
+      "ar": "تقيم SMAIL ورشة عمل في ليب."
+    }
+  },
+  {
     "id": "cohort3-closed",
     "published": true,
     "featured": true,
