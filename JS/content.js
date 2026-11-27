@@ -206,6 +206,29 @@
     }
   }
 
+  // ── Application forms (student / mentor): open or closed, link and dates come from data/site.json ──
+  function renderApplications(site) {
+    const apps = (site && site.applications) || {};
+    document.querySelectorAll('[data-application]').forEach(card => {
+      const a = apps[card.getAttribute('data-application')];
+      if (!a) return; // no data: keep the static page as it is
+      const period = card.querySelector('[data-app-period]');
+      if (period && a.period && loc(a.period)) { period.removeAttribute('data-i18n'); period.textContent = loc(a.period); }
+      const slot = card.querySelector('[data-app-action]');
+      if (!slot) return;
+      slot.textContent = '';
+      if (a.open && a.link) {
+        const btn = make('a', 'btn btn-registration disabled-open w-100 mt-2',
+          tr(card.getAttribute('data-application') === 'student' ? 'register_now_student' : 'register_now'));
+        btn.href = a.link; btn.target = '_blank'; btn.rel = 'noopener noreferrer';
+        slot.appendChild(btn);
+      } else {
+        slot.appendChild(make('button', 'btn btn-registration disabled-closed w-100 mt-2', tr('registration_closed')));
+        slot.appendChild(make('p', 'registration-label mt-2', tr('registration_closed_note')));
+      }
+    });
+  }
+
   // ── Start: each module loads only where the page has a slot for it ──
   const has = sel => document.querySelector(sel);
   if (has('[data-people]')) {
@@ -228,6 +251,13 @@
   if (has('[data-news]')) {
     get('news').then(items => {
       const go = () => renderNews(items);
+      go();
+      document.addEventListener('smail:langchange', go);
+    }).catch(() => {});
+  }
+  if (has('[data-application]')) {
+    get('site').then(site => {
+      const go = () => renderApplications(site);
       go();
       document.addEventListener('smail:langchange', go);
     }).catch(() => {});
