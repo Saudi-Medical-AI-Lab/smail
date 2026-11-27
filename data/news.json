@@ -1,5 +1,23 @@
 [
   {
+    "id": "cohort-3-interviews-start-next-week",
+    "published": true,
+    "featured": false,
+    "order": -1,
+    "date": "2026-11",
+    "tag": "program",
+    "link": "https://smail.org.sa",
+    "external": false,
+    "title": {
+      "en": "Cohort 3 interviews start next week",
+      "ar": "تبدأ مقابلات الدفعة الثالثة الأسبوع القادم"
+    },
+    "summary": {
+      "en": "Cohort 3 interviews start next week. Details on the SMAIL website.",
+      "ar": "تبدأ مقابلات الدفعة الثالثة الأسبوع القادم. التفاصيل على موقع سمايل."
+    }
+  },
+  {
     "id": "cohort3-closed",
     "published": true,
     "featured": true,
