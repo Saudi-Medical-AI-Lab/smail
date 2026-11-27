@@ -907,5 +907,22 @@
       "en": "Staff Scientist, Boston Children's Hospital",
       "ar": "عالم متفرغ، مستشفى بوسطن للأطفال"
     }
+  },
+  {
+    "id": "hind-alsaif-c3",
+    "group": "mentor",
+    "cohort": 3,
+    "order": 0,
+    "published": true,
+    "name": "Hind Alsaif",
+    "image": "images/Female-icon.png",
+    "title": {
+      "en": "Professor of Oncology",
+      "ar": "أستاذة طب الأورام"
+    },
+    "affiliation": {
+      "en": "King Faisal Specialist Hospital",
+      "ar": "مستشفى الملك فيصل التخصصي"
+    }
   }
 ]
