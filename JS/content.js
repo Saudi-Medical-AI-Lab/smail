@@ -106,7 +106,7 @@
         host.appendChild(row(people.filter(p => p.group === group).sort(byOrder), group));
       }
     });
-    if (window.AOS && AOS.refresh) AOS.refresh();
+    if (window.AOS) (AOS.refreshHard || AOS.refresh)();
   }
 
   function fail() {
@@ -176,7 +176,7 @@
         items.slice(0, 3).forEach((n, i) => host.appendChild(newsCard(n, loc(n.summary) || loc(n.body), i)));
       }
     });
-    if (window.AOS && AOS.refresh) AOS.refresh();
+    if (window.AOS) (AOS.refreshHard || AOS.refresh)();
   }
   function renderBanner(site) {
     const bar = document.getElementById('announcementBar');
