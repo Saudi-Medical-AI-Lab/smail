@@ -907,5 +907,22 @@
       "en": "Staff Scientist, Boston Children's Hospital",
       "ar": "عالم متفرغ، مستشفى بوسطن للأطفال"
     }
+  },
+  {
+    "id": "jose-a-lvarez-nu-n-ez-c3",
+    "group": "mentor",
+    "cohort": 3,
+    "order": 0,
+    "published": true,
+    "name": "José Álvarez-Núñez",
+    "image": "images/male-icon.png",
+    "title": {
+      "en": "Associate Professor",
+      "ar": "أستاذ مشارك"
+    },
+    "affiliation": {
+      "en": "University of Oxford",
+      "ar": "جامعة أكسفورد"
+    }
   }
 ]
