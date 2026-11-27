@@ -907,5 +907,22 @@
       "en": "Staff Scientist, Boston Children's Hospital",
       "ar": "عالم متفرغ، مستشفى بوسطن للأطفال"
     }
+  },
+  {
+    "id": "sara-ali-c3",
+    "group": "mentor",
+    "cohort": 3,
+    "order": 0,
+    "published": true,
+    "name": "Sara Ali",
+    "image": "images/Female-icon.png",
+    "title": {
+      "en": "Associate Professor of Radiology",
+      "ar": "أستاذة مشاركة في الأشعة"
+    },
+    "affiliation": {
+      "en": "King Faisal Specialist Hospital",
+      "ar": "مستشفى الملك فيصل التخصصي"
+    }
   }
 ]
