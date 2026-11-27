@@ -7,10 +7,42 @@
     return t[key] || key;
   };
   const loc = o => (o ? o[lang()] || o.en || '' : '');
-  const get = name => fetch('data/' + name + '.json', { cache: 'no-cache' }).then(r => {
-    if (!r.ok) throw new Error(name + ' ' + r.status);
-    return r.json();
-  });
+  // Load a data file. Retries a couple of times, and if the network still fails falls back to the last copy
+  // that loaded fine on this device, so a flaky connection or hard refresh never leaves the page empty.
+  const KEEP = 'smail_data_';
+  const wait = ms => new Promise(r => setTimeout(r, ms));
+  async function get(name) {
+    let lastError;
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try {
+        const r = await fetch('data/' + name + '.json', { cache: 'no-cache' });
+        if (!r.ok) throw new Error(name + ' ' + r.status);
+        const data = await r.json();
+        try { localStorage.setItem(KEEP + name, JSON.stringify(data)); } catch (e) { /* storage full or blocked */ }
+        return data;
+      } catch (e) {
+        lastError = e;
+        await wait(400 * (attempt + 1));
+      }
+    }
+    try {
+      const saved = localStorage.getItem(KEEP + name);
+      if (saved) return JSON.parse(saved);
+    } catch (e) { /* ignore */ }
+    throw lastError;
+  }
+
+  // The scroll animation library (AOS) hides every [data-aos] element until it runs. If it fails to load
+  // (CDN blocked or slow, common on a hard refresh), content must still show. Content first, animation second.
+  function reveal(root) {
+    const items = () => (root || document).querySelectorAll('[data-aos]');
+    if (!window.AOS) { items().forEach(e => e.removeAttribute('data-aos')); return; }
+    setTimeout(() => items().forEach(e => {
+      if (!e.classList.contains('aos-animate') && getComputedStyle(e).opacity === '0') {
+        e.style.opacity = '1'; e.style.transform = 'none';
+      }
+    }), 1500);
+  }
 
   function make(tag, cls, text) {
     const e = document.createElement(tag);
@@ -107,6 +139,7 @@
       }
     });
     if (window.AOS) (AOS.refreshHard || AOS.refresh)();
+    reveal();
   }
 
   function fail() {
@@ -177,6 +210,7 @@
       }
     });
     if (window.AOS) (AOS.refreshHard || AOS.refresh)();
+    reveal();
   }
   function renderBanner(site) {
     const bar = document.getElementById('announcementBar');
