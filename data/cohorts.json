@@ -16,14 +16,5 @@
     },
     "status": "completed",
     "published": true
-  },
-  {
-    "id": 3,
-    "label": {
-      "en": "Cohort 3",
-      "ar": "الدفعة الثالثة"
-    },
-    "status": "coming_soon",
-    "published": true
   }
 ]
