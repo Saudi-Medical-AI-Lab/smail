@@ -920,5 +920,18 @@
       "en": "King Fahd University of Petroleum and Minerals (KFUPM)",
       "ar": "جامعة الملك فهد للبترول والمعادن"
     }
+  },
+  {
+    "id": "turki-alshehri-c3",
+    "group": "student",
+    "cohort": 3,
+    "order": 1,
+    "published": true,
+    "name": "Turki Alshehri",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "King Abdulaziz University (KAU)",
+      "ar": "جامعة الملك عبدالعزيز"
+    }
   }
 ]
