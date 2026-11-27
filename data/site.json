@@ -13,11 +13,11 @@
   },
   "applications": {
     "student": {
-      "open": false,
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLSdm-OE8k8AeeB3IJOtAmpR-MHs945f50QJ9KVlRLaRb0gG52g/viewform",
+      "open": true,
+      "link": "https://forms.gle/TESTLINK",
       "period": {
-        "en": "From August 16 to September 15, 2026",
-        "ar": "من 16 أغسطس إلى 15 سبتمبر 2026"
+        "en": "From February 1 to March 15, 2027",
+        "ar": "من 1 فبراير إلى 15 مارس 2027"
       }
     },
     "mentor": {
