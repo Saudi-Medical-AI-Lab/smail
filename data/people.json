@@ -907,5 +907,18 @@
       "en": "Staff Scientist, Boston Children's Hospital",
       "ar": "عالم متفرغ، مستشفى بوسطن للأطفال"
     }
+  },
+  {
+    "id": "hassan-barmandah-c3",
+    "group": "student",
+    "cohort": 3,
+    "order": 0,
+    "published": true,
+    "name": "Hassan Barmandah",
+    "image": "images/students/hassan-barmandah.jpg",
+    "affiliation": {
+      "en": "Umm Al-Qura University",
+      "ar": "جامعة أم القرى"
+    }
   }
 ]
