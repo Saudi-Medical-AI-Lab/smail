@@ -933,5 +933,18 @@
       "en": "King Abdulaziz University (KAU)",
       "ar": "جامعة الملك عبدالعزيز"
     }
+  },
+  {
+    "id": "dana-alharbi-c3",
+    "group": "student",
+    "cohort": 3,
+    "order": 2,
+    "published": true,
+    "name": "Dana Alharbi",
+    "image": "images/Female-icon.png",
+    "affiliation": {
+      "en": "King Saud University (KSU)",
+      "ar": "جامعة الملك سعود"
+    }
   }
 ]
