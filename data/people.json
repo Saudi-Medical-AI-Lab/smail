@@ -907,5 +907,22 @@
       "en": "Staff Scientist, Boston Children's Hospital",
       "ar": "عالم متفرغ، مستشفى بوسطن للأطفال"
     }
+  },
+  {
+    "id": "noura-alharbi-c3",
+    "group": "mentor",
+    "cohort": 3,
+    "order": 0,
+    "published": true,
+    "name": "Noura Alharbi",
+    "image": "images/Female-icon.png",
+    "title": {
+      "en": "Associate Professor of Cardiology",
+      "ar": "أستاذة مشاركة في أمراض القلب"
+    },
+    "affiliation": {
+      "en": "King Saud University",
+      "ar": "جامعة الملك سعود"
+    }
   }
 ]
