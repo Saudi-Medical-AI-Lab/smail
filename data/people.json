@@ -487,20 +487,6 @@
     "region": null
   },
   {
-    "id": "anfal-alshehri-c1",
-    "group": "student",
-    "cohort": 1,
-    "order": 12,
-    "published": true,
-    "name": "Anfal Alshehri",
-    "image": "images/Female-icon.png",
-    "affiliation": {
-      "en": "King Abdulaziz University"
-    },
-    "mentor": "Somayah Albaradei",
-    "region": null
-  },
-  {
     "id": "ayatun-ara-c2",
     "group": "student",
     "cohort": 2,
