@@ -1,5 +1,23 @@
 [
   {
+    "id": "cohort-3-registration-is-now-open",
+    "published": true,
+    "featured": false,
+    "order": -1,
+    "date": "2026-11",
+    "tag": "program",
+    "link": "https://smail.org.sa",
+    "external": false,
+    "title": {
+      "en": "Cohort 3 registration is now open",
+      "ar": "فتح باب التسجيل للدفعة الثالثة"
+    },
+    "summary": {
+      "en": "Registration for Cohort 3 is open until January 15.",
+      "ar": "باب التسجيل للدفعة الثالثة مفتوح حتى 15 يناير."
+    }
+  },
+  {
     "id": "cohort3-closed",
     "published": true,
     "featured": true,
